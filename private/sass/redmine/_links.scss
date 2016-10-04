@@ -15,9 +15,11 @@ a {
         color: #c61a1a;
         text-decoration: underline;
     }
+
     img {
         border: 0;
     }
+
     &.issue.closed {
         color: #999;
         text-decoration: line-through;
@@ -38,6 +40,21 @@ a {
             color: #999;
         }
     }
+    &.collapsible {
+        padding-left: 12px;
+        background: url(../images/arrow_expanded.png) no-repeat -3px 40%;
+        &.collapsed {
+            background: url(../images/arrow_collapsed.png) no-repeat -5px 40%;
+        }
+    }
+    &#toggle-completed-versions {
+        color: #999;
+    }
+    &.toggle-checkboxes {
+        margin-left: 5px;
+        padding-left: 12px;
+        background: url(../images/toggle_check.png) no-repeat 0% 50%;
+    }
 }
 
 #sidebar a.selected {
@@ -57,23 +74,5 @@ a {
     &.selected {
         padding-left: 20px !important;
         background-position: 2px 40%;
-    }
-}
-
-a {
-    &.collapsible {
-        padding-left: 12px;
-        background: url(../images/arrow_expanded.png) no-repeat -3px 40%;
-        &.collapsed {
-            background: url(../images/arrow_collapsed.png) no-repeat -5px 40%;
-        }
-    }
-    &#toggle-completed-versions {
-        color: #999;
-    }
-    &.toggle-checkboxes {
-        margin-left: 5px;
-        padding-left: 12px;
-        background: url(../images/toggle_check.png) no-repeat 0% 50%;
     }
 }
