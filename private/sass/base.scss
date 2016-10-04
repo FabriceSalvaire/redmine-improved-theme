@@ -1,0 +1,16 @@
+/* Every folder within /private/sass has a file called _all.scss. This
+ * file ultimately gets imported by /private/sass/base.scss which gets
+ * compiled into /static/css/base.css. Update the _all.scss file to
+ * include additional modules. To keep the file simple, do not include
+ * files directly within base.scss.
+ */
+
+@charset "utf-8";
+
+// #############################################################################
+// IMPORTS
+
+// importing frameworks
+@import "libs/all";
+
+@import "redmine/all";

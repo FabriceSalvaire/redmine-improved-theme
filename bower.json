@@ -1,0 +1,7 @@
+{
+    "name": "redmine-improved",
+    "private": true,
+    "dependencies": {
+        "fontawesome": "4.6.3"
+    }
+}
