@@ -1,0 +1,31 @@
+/***** My page layout *****/
+
+.block-receiver {
+    border: 1px dashed #c0c0c0;
+    margin-bottom: 20px;
+    padding: 15px 0 15px 0;
+}
+
+.mypage-box {
+    margin: 0 0 20px 0;
+    color: #505050;
+    line-height: 1.5em;
+}
+
+.handle {
+    cursor: move;
+}
+
+a.close-icon {
+    display: block;
+    margin-top: 3px;
+    overflow: hidden;
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-image: url('../images/close.png');
+    &:hover {
+        background-image: url('../images/close_hl.png');
+    }
+}

@@ -1,0 +1,124 @@
+/***** Wiki *****/
+
+div.wiki {
+    table {
+        border-collapse: collapse;
+        margin-bottom: 1em;
+        border: 1px solid #bbb;
+        padding: 4px;
+    }
+    td, th {
+        border: 1px solid #bbb;
+        padding: 4px;
+    }
+    .noborder {
+        border: 0;
+        td, th {
+            border: 0;
+        }
+    }
+    .external {
+        background-position: 0% 60%;
+        background-repeat: no-repeat;
+        padding-left: 12px;
+        background-image: url(../images/external.png);
+    }
+    a {
+        word-wrap: break-word;
+        &.new {
+            color: #b73535;
+        }
+    }
+    ul, ol {
+        margin-bottom: 1em;
+    }
+    li > {
+        ul, ol {
+            margin-bottom: 0;
+        }
+    }
+    pre {
+        margin: 1em 1em 1em 1.6em;
+        padding: 8px;
+        background-color: #fafafa;
+        border: 1px solid #e2e2e2;
+        border-radius: 3px;
+        width: auto;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    ul.toc {
+        background-color: #ffffdd;
+        border: 1px solid #e4e4e4;
+        padding: 4px;
+        line-height: 1.2em;
+        margin-bottom: 12px;
+        margin-right: 12px;
+        margin-left: 0;
+        display: table;
+    }
+}
+
+* html div.wiki ul.toc {
+    width: 50%;
+}
+
+/* IE6 doesn't autosize div */
+
+div.wiki ul.toc {
+    &.right {
+        float: right;
+        margin-left: 12px;
+        margin-right: 0;
+        width: auto;
+    }
+    &.left {
+        float: left;
+        margin-right: 12px;
+        margin-left: 0;
+        width: auto;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        list-style-type: none;
+        margin: 0;
+        font-size: 12px;
+        li {
+            margin-left: 1.5em;
+            font-size: 10px;
+        }
+    }
+    a {
+        font-size: 0.9em;
+        font-weight: normal;
+        text-decoration: none;
+        color: #606060;
+        &:hover {
+            color: #c61a1a;
+            text-decoration: underline;
+        }
+    }
+}
+
+a.wiki-anchor {
+    display: none;
+    margin-left: 6px;
+    text-decoration: none;
+    &:hover {
+        color: #aaa !important;
+        text-decoration: none;
+    }
+}
+
+h1:hover a.wiki-anchor, h2:hover a.wiki-anchor, h3:hover a.wiki-anchor {
+    display: inline;
+    color: #ddd;
+}
+
+div.wiki img {
+    vertical-align: middle;
+    max-width: 100%;
+}

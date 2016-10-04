@@ -1,0 +1,417 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-width: 900px;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    padding: 2px 10px 1px 0px;
+    margin: 0 0 10px 0;
+}
+
+#content h1, h2, h3, h4 {
+    color: #555;
+}
+
+h2, .wiki h1 {
+    font-size: 20px;
+}
+
+h3, .wiki h2 {
+    font-size: 16px;
+}
+
+h4, .wiki h3 {
+    font-size: 13px;
+}
+
+h4 {
+    border-bottom: 1px dotted #bbb;
+}
+
+pre, code {
+    font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace;
+}
+
+/***** Layout *****/
+
+#wrapper {
+    background: white;
+    overflow: hidden;
+}
+
+#top-menu {
+    background: #3E5B76;
+    color: #fff;
+    height: 1.8em;
+    font-size: 0.8em;
+    padding: 2px 2px 0px 6px;
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        float: left;
+        list-style-type: none;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        white-space: nowrap;
+    }
+    a {
+        color: #fff;
+        margin-right: 8px;
+        font-weight: bold;
+    }
+    #loggedas {
+        float: right;
+        margin-right: 0.5em;
+        color: #fff;
+    }
+}
+
+#account {
+    float: right;
+}
+
+#header {
+    min-height: 5.3em;
+    margin: 0;
+    background-color: #628DB6;
+    color: #f8f8f8;
+    padding: 4px 8px 20px 6px;
+    position: relative;
+    a {
+        color: #f8f8f8;
+    }
+    h1 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        .breadcrumbs {
+            display: block;
+            font-size: .6em;
+            font-weight: normal;
+        }
+    }
+}
+
+#quick-search {
+    float: right;
+}
+
+#main-menu {
+    position: absolute;
+    bottom: 0px;
+    left: 6px;
+    margin-right: -500px;
+    width: 100%;
+    ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        white-space: nowrap;
+    }
+    li {
+        float: none;
+        list-style-type: none;
+        margin: 0px 2px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        white-space: nowrap;
+        display: inline-block;
+        a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0;
+            padding: 4px 10px 4px 10px;
+            &:hover {
+                background: #759FCF;
+                color: #fff;
+            }
+        }
+        &:hover ul.menu-children, ul.menu-children.visible {
+            display: block;
+        }
+        a {
+            &.selected {
+                background: #fff;
+                color: #555;
+                &:hover {
+                    background: #fff;
+                    color: #555;
+                }
+            }
+            &.new-object {
+                background-color: #759FCF;
+            }
+        }
+    }
+    .menu-children {
+        display: none;
+        position: absolute;
+        width: inherit;
+        z-index: 1;
+        background-color: #fff;
+        border-right: 1px solid #759FCF;
+        border-bottom: 1px solid #759FCF;
+        border-left: 1px solid #759FCF;
+        li {
+            float: left;
+            clear: both;
+            width: 100%;
+            a {
+                color: #555;
+                background-color: #fff;
+                font-weight: normal;
+                &:hover {
+                    color: #fff;
+                    background-color: #759FCF;
+                }
+            }
+        }
+    }
+    .tabs-buttons {
+        right: 6px;
+        background-color: transparent;
+        border-bottom-color: transparent;
+    }
+}
+
+#admin-menu {
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        margin: 0;
+        padding: 0 0 6px 0;
+        list-style-type: none;
+    }
+    a {
+        background-position: 0% 40%;
+        background-repeat: no-repeat;
+        padding-left: 20px;
+        padding-top: 2px;
+        padding-bottom: 3px;
+        &.projects {
+            background-image: url(../images/projects.png);
+        }
+        &.users {
+            background-image: url(../images/user.png);
+        }
+        &.groups {
+            background-image: url(../images/group.png);
+        }
+        &.roles {
+            background-image: url(../images/database_key.png);
+        }
+        &.trackers {
+            background-image: url(../images/ticket.png);
+        }
+        &.issue_statuses {
+            background-image: url(../images/ticket_edit.png);
+        }
+        &.workflows {
+            background-image: url(../images/ticket_go.png);
+        }
+        &.custom_fields {
+            background-image: url(../images/textfield.png);
+        }
+        &.enumerations {
+            background-image: url(../images/text_list_bullets.png);
+        }
+        &.settings {
+            background-image: url(../images/changeset.png);
+        }
+        &.plugins {
+            background-image: url(../images/plugin.png);
+        }
+        &.info {
+            background-image: url(../images/help.png);
+        }
+        &.server_authentication {
+            background-image: url(../images/server_key.png);
+        }
+    }
+}
+
+#main {
+    background-color: #EEEEEE;
+}
+
+#sidebar {
+    float: right;
+    width: 22%;
+    position: relative;
+    z-index: 9;
+    padding: 0;
+    margin: 0;
+}
+
+* html #sidebar {
+    width: 22%;
+}
+
+#sidebar {
+    h3 {
+        font-size: 14px;
+        margin-top: 14px;
+        color: #666;
+    }
+    hr {
+        width: 100%;
+        margin: 0 auto;
+        height: 1px;
+        background: #ccc;
+        border: 0;
+    }
+}
+
+* html #sidebar hr {
+    width: 95%;
+    position: relative;
+    left: -6px;
+    color: #ccc;
+}
+
+#sidebar {
+    .contextual {
+        margin-right: 1em;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+ul.flat {
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar ul li, ul.flat li {
+    list-style-type: none;
+    margin: 0px 2px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#sidebar div.wiki ul {
+    margin: inherit;
+    padding-left: 40px;
+    li {
+        list-style-type: inherit;
+    }
+}
+
+#content {
+    width: 75%;
+    background-color: #fff;
+    margin: 0px;
+    border-right: 1px solid #ddd;
+    padding: 6px 10px 10px 10px;
+    z-index: 10;
+}
+
+* html #content {
+    width: 75%;
+    padding-left: 0;
+    margin-top: 0px;
+    padding: 6px 10px 10px 10px;
+}
+
+html > body #content {
+    min-height: 600px;
+}
+
+* html body #content {
+    height: 600px;
+}
+
+/* IE */
+
+#main.nosidebar {
+    #sidebar {
+        display: none;
+    }
+    #content {
+        width: auto;
+        border-right: 0;
+    }
+}
+
+#footer {
+    clear: both;
+    border-top: 1px solid #bbb;
+    font-size: 0.9em;
+    color: #aaa;
+    padding: 5px;
+    text-align: center;
+    background: #fff;
+}
+
+#login-form {
+    table {
+        margin-top: 5em;
+        padding: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px solid #FDBF3B;
+        background-color: #FFEBC1;
+        td {
+            padding: 6px;
+        }
+    }
+    label {
+        font-weight: bold;
+    }
+    input {
+        &#username, &#password {
+            width: 300px;
+        }
+    }
+}
+
+div.modal {
+    border-radius: 5px;
+    background: #fff;
+    z-index: 50;
+    padding: 4px;
+    h3.title {
+        display: none;
+    }
+    p.buttons {
+        text-align: right;
+        margin-bottom: 0;
+    }
+    .box p {
+        margin: 0.3em 0;
+    }
+}
+
+input#openid_url {
+    background: url(../images/openid-bg.gif) no-repeat;
+    background-color: #fff;
+    background-position: 0 50%;
+    padding-left: 18px;
+}
+
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.mobile-show {
+    display: none;
+}

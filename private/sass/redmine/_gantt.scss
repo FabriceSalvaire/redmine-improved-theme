@@ -1,0 +1,153 @@
+/***** Gantt chart *****/
+
+.gantt_hdr {
+    position: absolute;
+    top: 0;
+    height: 16px;
+    border-top: 1px solid #c0c0c0;
+    border-bottom: 1px solid #c0c0c0;
+    border-right: 1px solid #c0c0c0;
+    text-align: center;
+    overflow: hidden;
+    &.nwday {
+        background-color: #f1f1f1;
+        color: #999;
+    }
+}
+
+.gantt_subjects {
+    font-size: 0.8em;
+    div {
+        line-height: 16px;
+        height: 16px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+.task {
+    position: absolute;
+    height: 8px;
+    font-size: 0.8em;
+    color: #888;
+    padding: 0;
+    margin: 0;
+    line-height: 16px;
+    white-space: nowrap;
+    &.label {
+        width: 100%;
+        &.project, &.version {
+            font-weight: bold;
+        }
+    }
+}
+
+.task_late {
+    background: #f66 url(../images/task_late.png);
+    border: 1px solid #f66;
+}
+
+.task_done {
+    background: #00c600 url(../images/task_done.png);
+    border: 1px solid #00c600;
+}
+
+.task_todo {
+    background: #aaa url(../images/task_todo.png);
+    border: 1px solid #aaa;
+    &.parent {
+        background: #888;
+        border: 1px solid #888;
+        height: 3px;
+    }
+}
+
+.task_late.parent, .task_done.parent {
+    height: 3px;
+}
+
+.task.parent.marker {
+    &.starting {
+        position: absolute;
+        background: url(../images/task_parent_end.png) no-repeat 0 0;
+        width: 8px;
+        height: 16px;
+        margin-left: -4px;
+        left: 0px;
+        top: -1px;
+    }
+    &.ending {
+        position: absolute;
+        background: url(../images/task_parent_end.png) no-repeat 0 0;
+        width: 8px;
+        height: 16px;
+        margin-left: -4px;
+        right: 0px;
+        top: -1px;
+    }
+}
+
+.version {
+    &.task_late {
+        background: #f66 url(../images/milestone_late.png);
+        border: 1px solid #f66;
+        height: 2px;
+        margin-top: 3px;
+    }
+    &.task_done {
+        background: #00c600 url(../images/milestone_done.png);
+        border: 1px solid #00c600;
+        height: 2px;
+        margin-top: 3px;
+    }
+    &.task_todo {
+        background: #fff url(../images/milestone_todo.png);
+        border: 1px solid #fff;
+        height: 2px;
+        margin-top: 3px;
+    }
+    &.marker {
+        background-image: url(../images/version_marker.png);
+        background-repeat: no-repeat;
+        border: 0;
+        margin-left: -4px;
+        margin-top: 1px;
+    }
+}
+
+.project {
+    &.task_late {
+        background: #f66 url(../images/milestone_late.png);
+        border: 1px solid #f66;
+        height: 2px;
+        margin-top: 3px;
+    }
+    &.task_done {
+        background: #00c600 url(../images/milestone_done.png);
+        border: 1px solid #00c600;
+        height: 2px;
+        margin-top: 3px;
+    }
+    &.task_todo {
+        background: #fff url(../images/milestone_todo.png);
+        border: 1px solid #fff;
+        height: 2px;
+        margin-top: 3px;
+    }
+    &.marker {
+        background-image: url(../images/project_marker.png);
+        background-repeat: no-repeat;
+        border: 0;
+        margin-left: -4px;
+        margin-top: 1px;
+    }
+}
+
+.version-behind-schedule a, .issue-behind-schedule a {
+    color: #f66914;
+}
+
+.version-overdue a, .issue-overdue a, .project-overdue a {
+    color: #f00;
+}

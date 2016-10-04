@@ -1,0 +1,345 @@
+/***** Tabular forms ******/
+
+.tabular p {
+    margin: 0;
+    padding: 3px 0 3px 0;
+    padding-left: 180px;
+    /* width of left column containing the label elements */
+    min-height: 1.8em;
+    clear: left;
+}
+
+html > body .tabular p {
+    overflow: hidden;
+}
+
+.tabular {
+    input, select {
+        max-width: 95%;
+    }
+    textarea {
+        width: 95%;
+        resize: vertical;
+    }
+    label {
+        font-weight: bold;
+        float: left;
+        text-align: right;
+        /* width of left column */
+        margin-left: -180px;
+        /* width of labels. Should be smaller than left column to create some right margin */
+        width: 175px;
+        &.floating {
+            font-weight: normal;
+            margin-left: 0px;
+            text-align: left;
+            width: 270px;
+        }
+        &.block {
+            font-weight: normal;
+            margin-left: 0px !important;
+            text-align: left;
+            float: none;
+            display: block;
+            width: auto !important;
+        }
+        &.inline {
+            font-weight: normal;
+            float: none;
+            margin-left: 5px !important;
+            width: auto;
+        }
+    }
+}
+
+label.no-css {
+    font-weight: inherit;
+    float: none;
+    text-align: left;
+    margin-left: 0px;
+    width: auto;
+}
+
+input#time_entry_comments {
+    width: 90%;
+}
+
+#preview fieldset {
+    margin-top: 1em;
+    background: url(../images/draft.png);
+}
+
+.tabular.settings {
+    p {
+        padding-left: 300px;
+    }
+    label {
+        margin-left: -300px;
+        width: 295px;
+    }
+    textarea {
+        width: 99%;
+    }
+}
+
+.settings.enabled_scm {
+    table {
+        width: 100%;
+    }
+    td.scm_name {
+        font-weight: bold;
+    }
+}
+
+fieldset {
+    &.settings label {
+        display: block;
+    }
+    &#notified_events .parent {
+        padding-left: 20px;
+    }
+}
+
+span.required {
+    color: #bb0000;
+}
+
+.summary {
+    font-style: italic;
+}
+
+.check_box_group {
+    display: block;
+    width: 95%;
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 2px 4px 4px 2px;
+    background: #fff;
+    border: 1px solid #9EB1C2;
+    border-radius: 2px;
+    label {
+        font-weight: normal;
+        margin-left: 0px !important;
+        text-align: left;
+        float: none;
+        display: block;
+        width: auto;
+    }
+    &.bool_cf {
+        border: 0;
+        background: inherit;
+        label {
+            display: inline;
+        }
+    }
+}
+
+#attachments_fields {
+    input.description {
+        margin-left: 4px;
+        width: 340px;
+    }
+    span {
+        display: block;
+        white-space: nowrap;
+    }
+    input.filename {
+        border: 0;
+        height: 1.8em;
+        width: 250px;
+        color: #555;
+        background-color: inherit;
+        background: url(../images/attachment.png) no-repeat 1px 50%;
+        padding-left: 18px;
+    }
+    .ajax-waiting input.filename {
+        background: url(../images/hourglass.png) no-repeat 0px 50%;
+    }
+    .ajax-loading input.filename {
+        background: url(../images/loading.gif) no-repeat 0px 50%;
+    }
+    div.ui-progressbar {
+        width: 100px;
+        height: 14px;
+        margin: 2px 0 -5px 8px;
+        display: inline-block;
+    }
+}
+
+a.remove-upload {
+    background: url(../images/delete.png) no-repeat 1px 50%;
+    width: 1px;
+    display: inline-block;
+    padding-left: 16px;
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
+div {
+    &.fileover {
+        background-color: lavender;
+    }
+    &.attachments {
+        margin-top: 12px;
+        p {
+            margin: 4px 0 2px 0;
+        }
+        img {
+            vertical-align: middle;
+        }
+        span.author {
+            font-size: 0.9em;
+            color: #888;
+        }
+    }
+    &.thumbnails {
+        margin: 0.6em;
+        div {
+            background: #fff;
+            border: 2px solid #ddd;
+            display: inline-block;
+            margin-right: 2px;
+        }
+        img {
+            margin: 3px;
+            vertical-align: middle;
+        }
+    }
+}
+
+#history div.thumbnails {
+    margin-left: 2em;
+}
+
+p.other-formats {
+    text-align: right;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.other-formats span + span:before {
+    content: "| ";
+}
+
+a.atom {
+    background: url(../images/feed.png) no-repeat 1px 50%;
+    padding: 2px 0px 3px 16px;
+}
+
+em.info {
+    font-style: normal;
+    font-size: 90%;
+    color: #888;
+    display: block;
+    &.error {
+        padding-left: 20px;
+        background: url(../images/exclamation.png) no-repeat 0 50%;
+    }
+}
+
+textarea.text_cf {
+    width: 95%;
+    resize: vertical;
+}
+
+input {
+    &.string_cf, &.link_cf {
+        width: 95%;
+    }
+}
+
+select.bool_cf {
+    width: auto !important;
+}
+
+#tab-content-modules fieldset p {
+    margin: 3px 0 4px 0;
+}
+
+#tab-content-users {
+    .splitcontentleft {
+        width: 64%;
+    }
+    .splitcontentright {
+        width: 34%;
+    }
+    fieldset {
+        padding: 1em;
+        margin-bottom: 1em;
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+        }
+    }
+    #principals {
+        max-height: 400px;
+        overflow: auto;
+    }
+}
+
+#users_for_watcher {
+    height: 200px;
+    overflow: auto;
+    label {
+        display: block;
+    }
+}
+
+table.members td {
+    &.name {
+        padding-left: 20px;
+    }
+    &.group, &.groupnonmember, &.groupanonymous {
+        background: url(../images/group.png) no-repeat 0% 1px;
+    }
+}
+
+input {
+    &#principal_search, &#user_search {
+        width: 90%;
+    }
+}
+
+.roles-selection label {
+    display: inline-block;
+    width: 210px;
+}
+
+input.autocomplete {
+    background: #fff url(../images/magnifier.png) no-repeat 2px 50%;
+    padding-left: 20px !important;
+    border: 1px solid #9EB1C2;
+    border-radius: 2px;
+    height: 1.5em;
+    &.ajax-loading {
+        background-image: url(../images/loading.gif);
+    }
+}
+
+.role-visibility {
+    padding-left: 2em;
+}
+
+.objects-selection {
+    height: 300px;
+    overflow: auto;
+    margin-bottom: 1em;
+    label {
+        display: block;
+    }
+    > div {
+        column-count: auto;
+        column-width: 200px;
+        -webkit-column-count: auto;
+        -webkit-column-width: 200px;
+        -webkit-column-gap: 0.5rem;
+        -webkit-column-rule: 1px solid #ccc;
+        -moz-column-count: auto;
+        -moz-column-width: 200px;
+        -moz-column-gap: 0.5rem;
+        -moz-column-rule: 1px solid #ccc;
+    }
+}

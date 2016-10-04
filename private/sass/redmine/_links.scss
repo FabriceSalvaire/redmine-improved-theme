@@ -1,0 +1,75 @@
+/***** Links *****/
+
+a {
+    color: #169;
+    text-decoration: none;
+    &:link, &:visited {
+        color: #169;
+        text-decoration: none;
+    }
+    &:hover, &:active {
+        color: #c61a1a;
+        text-decoration: underline;
+    }
+    img {
+        border: 0;
+    }
+    &.issue.closed {
+        color: #999;
+        text-decoration: line-through;
+        &:link, &:visited {
+            color: #999;
+            text-decoration: line-through;
+        }
+    }
+    &.project.closed {
+        color: #999;
+        &:link, &:visited {
+            color: #999;
+        }
+    }
+    &.user.locked {
+        color: #999;
+        &:link, &:visited {
+            color: #999;
+        }
+    }
+}
+
+#sidebar a.selected {
+    line-height: 1.7em;
+    padding: 1px 3px 2px 2px;
+    margin-left: -2px;
+    background-color: #9DB9D5;
+    color: #fff;
+    border-radius: 2px;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+#admin-menu a {
+    line-height: 1.7em;
+    &.selected {
+        padding-left: 20px !important;
+        background-position: 2px 40%;
+    }
+}
+
+a {
+    &.collapsible {
+        padding-left: 12px;
+        background: url(../images/arrow_expanded.png) no-repeat -3px 40%;
+        &.collapsed {
+            background: url(../images/arrow_collapsed.png) no-repeat -5px 40%;
+        }
+    }
+    &#toggle-completed-versions {
+        color: #999;
+    }
+    &.toggle-checkboxes {
+        margin-left: 5px;
+        padding-left: 12px;
+        background: url(../images/toggle_check.png) no-repeat 0% 50%;
+    }
+}
