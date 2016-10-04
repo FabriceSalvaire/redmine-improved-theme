@@ -644,10 +644,6 @@ span {
     border-radius: 3px;
 }
 
-.pagination .per-page span.selected {
-    font-weight: bold;
-}
-
 div.square {
     border: 1px solid #999;
     float: left;
@@ -655,22 +651,6 @@ div.square {
     overflow: hidden;
     width: .6em;
     height: .6em;
-}
-
-.contextual {
-    float: right;
-    white-space: nowrap;
-    line-height: 1.4em;
-    margin-top: 5px;
-    padding-left: 10px;
-    font-size: 0.9em;
-    input, select {
-        font-size: 0.9em;
-    }
-}
-
-.message .contextual {
-    margin-top: 0;
 }
 
 .splitcontent {
@@ -726,11 +706,6 @@ blockquote {
 abbr, span.field-description[title] {
     border-bottom: 1px dotted #aaa;
     cursor: help;
-}
-
-textarea.wiki-edit {
-    width: 99%;
-    resize: vertical;
 }
 
 li p {
@@ -1169,13 +1144,6 @@ table#time-report {
     }
 }
 
-div.wiki-page .contextual a {
-    opacity: 0.4;
-    &:hover {
-        opacity: 1;
-    }
-}
-
 form .attributes select {
     width: 60%;
     + a.icon-only {
@@ -1317,57 +1285,11 @@ input#content_comments {
     width: 99%;
 }
 
-span.pagination {
-    margin-left: 3px;
-    color: #888;
-}
-
-.pagination ul.pages {
-    margin: 0 5px 0 0;
-    padding: 0;
-    display: inline;
-    li {
-        display: inline-block;
-        padding: 0;
-        border: 1px solid #ccc;
-        margin-left: -1px;
-        line-height: 2em;
-        margin-bottom: 1em;
-        white-space: nowrap;
-        text-align: center;
-        a, span {
-            padding: 3px 8px;
-        }
-        &:first-child {
-            border-top-left-radius: 4px;
-            border-bottom-left-radius: 4px;
-        }
-        &:last-child {
-            border-top-right-radius: 4px;
-            border-bottom-right-radius: 4px;
-        }
-        &.current {
-            color: white;
-            background-color: #628DB6;
-            border-color: #628DB6;
-        }
-        &.page {
-            &:hover {
-                background-color: #EEE;
-            }
-            a {
-                &:hover, &:active {
-                    color: inherit;
-                    text-decoration: inherit;
-                }
-            }
-        }
-    }
-}
-
-span.pagination > span {
-    white-space: nowrap;
-}
+/***************************************************************************************************
+ *
+ *
+ *
+ */
 
 #search-form fieldset p {
     margin: 0.2em 0;
