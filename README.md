@@ -4,6 +4,9 @@ It supports Redmine v3.3.
 
 This work is licensed under [CC by-nc-na](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
 
+![Overview](https://github.com/FabriceSalvaire/redmine-improved-theme/raw/master/screenshots/redmine-overview.png)
+![Wiki](https://github.com/FabriceSalvaire/redmine-improved-theme/raw/master/screenshots/redmine-wiki.png)
+
 # Changes from the original
 
 First steps:
@@ -35,8 +38,10 @@ Ongoing changes :
 
 Steps to install this theme :
 
-* create a new directory in *public/theme*
-* ...
+* clone the repository or unzip the archive in the *public/theme* directory of yout Redmine instance,
+* check file permissions
+* the directory name defines the theme name
+* select this theme in Administration / Settings / Display / Theme
 
 # How to generate the stylesheet from scratch
 
