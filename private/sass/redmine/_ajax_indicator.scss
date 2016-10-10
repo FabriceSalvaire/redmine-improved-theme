@@ -5,8 +5,7 @@
  */
 
 #ajax-indicator {
-    position: absolute;
-    /* fixed not supported by IE */
+    position: fixed;
     background-color: #eee;
     border: 1px solid #bbb;
     top: 35%;
@@ -17,6 +16,7 @@
     padding: 0.6em;
     z-index: 100;
     opacity: 0.5;
+
     span {
 	background-position: 0% 40%;
 	background-repeat: no-repeat;
@@ -24,8 +24,4 @@
 	padding-left: 26px;
 	vertical-align: bottom;
     }
-}
-
-html > body #ajax-indicator {
-    position: fixed;
 }
