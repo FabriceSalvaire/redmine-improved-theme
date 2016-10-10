@@ -17,6 +17,15 @@ Ongoing changes :
 * convert icons to FontAwesome
 * replace inline values by variables
 
+# Design Rules
+
+* update first the most used parts of the Redmine interface
+* flat design and contrasted colours (look at material design)
+* use custom settings to help user to customise the stylesheet
+* only support modern browser
+* use the power of SASS
+* use jquery to patch the DOM
+
 # Redmine Links
 
 * [Redmine Theme List](http://www.redmine.org/projects/redmine/wiki/Theme_List)
