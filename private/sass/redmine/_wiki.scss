@@ -4,7 +4,36 @@
  *
  */
 
+div.wiki-page .contextual a {
+    opacity: 0.4;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+textarea.wiki-edit {
+    width: 99%;
+    resize: vertical;
+}
+
+$wiki-font-base: 16px;
+
 div.wiki {
+    font-size: $wiki-font-base;
+    color: $gray-darker;
+
+    h1 {
+	font-size: ceil(($wiki-font-base * 2.0));
+    }
+
+    h2 {
+	font-size: ceil(($wiki-font-base * 1.6));
+    }
+
+    h3 {
+	font-size: ceil(($wiki-font-base * 1.2));
+    }
+
     table {
         border-collapse: collapse;
         margin-bottom: 1em;

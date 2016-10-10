@@ -7,7 +7,7 @@
 .icon {
     background-position: 0% 50%;
     background-repeat: no-repeat;
-    padding-left: 20px;
+    padding-left: 20px; // to make room for the icon
     padding-top: 2px;
     padding-bottom: 3px;
 }
@@ -32,35 +32,47 @@ a.icon-only {
     }
 }
 
-.icon-add {
-    background-image: url(../images/add.png);
+/*******************************************************************************
+ *
+ * Icon types
+ *
+ */
+
+a.icon-add:before {
+    @include fonteawesome-icon($fa-var-plus-circle);
+    // @include fonteawesome-large-icon();
+    // color: $icon-add-colour;
 }
 
-.icon-edit {
-    background-image: url(../images/edit.png);
+a.icon-edit:before {
+    @include fonteawesome-icon($fa-var-edit);
 }
 
-.icon-copy {
-    background-image: url(../images/copy.png);
+a.icon-copy:before {
+    @include fonteawesome-icon($fa-var-clone);
 }
 
 .icon-duplicate {
     background-image: url(../images/duplicate.png);
 }
 
-.icon-del {
-    background-image: url(../images/delete.png);
+a.icon-del:before {
+    @include fonteawesome-icon($fa-var-trash); // -times
+    // color: $icon-del-colour;
 }
 
-.icon-move {
-    background-image: url(../images/move.png);
+a.icon-move:before {
+    // used for rename
+    // background-image: url(../images/move.png);
+    @include fonteawesome-icon($fa-var-pencil);
 }
 
-.icon-save {
-    background-image: url(../images/save.png);
+a.icon-save:before {
+    @include fonteawesome-icon($fa-var-floppy-o);
 }
 
 .icon-cancel {
+    // ban
     background-image: url(../images/cancel.png);
 }
 
@@ -69,10 +81,12 @@ a.icon-only {
 }
 
 .icon-folder {
+    // folder
     background-image: url(../images/folder.png);
 }
 
 .open .icon-folder {
+    // folder-o
     background-image: url(../images/folder_open.png);
 }
 
@@ -81,6 +95,7 @@ a.icon-only {
 }
 
 .icon-user {
+    // user
     background-image: url(../images/user.png);
 }
 
@@ -89,23 +104,29 @@ a.icon-only {
 }
 
 .icon-help {
+    // question
     background-image: url(../images/help.png);
 }
 
 .icon-attachment {
+    // paperclip
     background-image: url(../images/attachment.png);
 }
 
-.icon-history {
-    background-image: url(../images/history.png);
+a.icon-history:before {
+    @include fonteawesome-icon($fa-var-history);
 }
 
-.icon-time {
-    background-image: url(../images/time.png);
+span.icon.icon-time {
+    padding-left: 0; // Fixme: to reset .icon
+}
+span.icon-time:before {
+    @include fonteawesome-icon($fa-var-clock-o);
 }
 
-.icon-time-add {
-    background-image: url(../images/time_add.png);
+a.icon-time-add:before {
+    @include fonteawesome-icon($fa-var-clock-o);
+    // background-image: url(../images/time_add.png);
 }
 
 .icon-stats {
@@ -120,28 +141,28 @@ a.icon-only {
     background-image: url(../images/exclamation.png);
 }
 
-.icon-fav {
-    background-image: url(../images/fav.png);
+a.icon-fav:before {
+    @include fonteawesome-icon($fa-var-star);
 }
 
-.icon-fav-off {
-    background-image: url(../images/fav_off.png);
+a.icon-fav-off:before {
+    @include fonteawesome-icon($fa-var-star-o);
 }
 
-.icon-reload {
-    background-image: url(../images/reload.png);
+a.icon-reload:before {
+    @include fonteawesome-icon($fa-var-refresh);
 }
 
-.icon-lock {
-    background-image: url(../images/locked.png);
+a.icon-lock:before {
+    @include fonteawesome-icon($fa-var-lock);
 }
 
-.icon-unlock {
-    background-image: url(../images/unlock.png);
+a.icon-unlock:before {
+    @include fonteawesome-icon($fa-var-unlock);
 }
 
-.icon-checked {
-    background-image: url(../images/toggle_check.png);
+a.icon-checked:before {
+    @include fonteawesome-icon($fa-var-check);
 }
 
 .icon-details {
@@ -152,8 +173,8 @@ a.icon-only {
     background-image: url(../images/report.png);
 }
 
-.icon-comment {
-    background-image: url(../images/comment.png);
+a.icon-comment:before {
+    @include fonteawesome-icon($fa-var-comment);
 }
 
 .icon-summary {
@@ -165,15 +186,17 @@ a.icon-only {
 }
 
 .icon-issue {
+    // div.issues h3
+    // ticket sticky-note
     background-image: url(../images/ticket.png);
 }
 
-.icon-zoom-in {
-    background-image: url(../images/zoom_in.png);
+a.icon-zoom-in:before {
+    @include fonteawesome-icon($fa-var-search-plus);
 }
 
-.icon-zoom-out {
-    background-image: url(../images/zoom_out.png);
+a.icon-zoom-out:before {
+    @include fonteawesome-icon($fa-var-search-minus);
 }
 
 .icon-magnifier {
@@ -275,6 +298,12 @@ a.icon-only {
     }
 }
 
+/*******************************************************************************
+ *
+ *
+ *
+ */
+
 .sort-handle {
     width: 16px;
     height: 16px;
@@ -289,9 +318,16 @@ tr.ui-sortable-helper {
     border: 1px solid #e4e4e4;
 }
 
-.contextual > .icon:not(:first-child), .buttons > .icon:not(:first-child) {
+.contextual > .icon:not(:first-child),
+.buttons > .icon:not(:first-child) {
     margin-left: 5px;
 }
+
+/*******************************************************************************
+ *
+ * Gravatar
+ *
+ */
 
 img.gravatar {
     vertical-align: middle;
@@ -331,6 +367,12 @@ td.username img.gravatar {
     float: left;
     margin-right: 4px;
 }
+
+/*******************************************************************************
+ *
+ *
+ *
+ */
 
 #activity dt, .journal {
     clear: left;

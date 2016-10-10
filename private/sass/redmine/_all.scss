@@ -1,12 +1,18 @@
 // #############################################################################
 // AUTOIMPORTS
 
+@import "_settings";
+@import "_mixins";
+
+@import "_reset";
+
 @import "_layout";
 @import "_links";
-@import "_tables";
+@import "_tables"; // to be splitted ?
+
 @import "_contextual";
 @import "_paginations";
-@import "_tabular_forms";
+@import "_tabular_forms"; // to be splitted ?
 @import "_messages";
 @import "_ajax_indicator";
 @import "_calendar";
@@ -17,8 +23,11 @@
 @import "_wiki";
 @import "_mypage";
 @import "_gantt";
-@import "_icons";
+@import "_icons"; // to be splitted ?
 @import "_custom_jquery";
 @import "_code_ray";
 @import "_print";
 @import "_accessibility";
+
+@import "_boxes";
+@import "_decorations";

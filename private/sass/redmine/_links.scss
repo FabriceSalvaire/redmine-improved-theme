@@ -5,17 +5,6 @@
  */
 
 a {
-    color: #169;
-    text-decoration: none;
-    &:link, &:visited {
-        color: #169;
-        text-decoration: none;
-    }
-    &:hover, &:active {
-        color: #c61a1a;
-        text-decoration: underline;
-    }
-
     img {
         border: 0;
     }
@@ -56,6 +45,8 @@ a {
         background: url(../images/toggle_check.png) no-repeat 0% 50%;
     }
 }
+
+// To be moved
 
 #sidebar a.selected {
     line-height: 1.7em;

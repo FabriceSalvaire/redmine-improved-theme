@@ -559,30 +559,6 @@ td.center {
     text-align: center;
 }
 
-h3.version {
-    background: url(../images/package.png) no-repeat 0% 50%;
-    padding-left: 20px;
-}
-
-div {
-    &.issues h3 {
-        background: url(../images/ticket.png) no-repeat 0% 50%;
-        padding-left: 20px;
-    }
-    &.members h3 {
-        background: url(../images/group.png) no-repeat 0% 50%;
-        padding-left: 20px;
-    }
-    &.news h3 {
-        background: url(../images/news.png) no-repeat 0% 50%;
-        padding-left: 20px;
-    }
-    &.projects h3 {
-        background: url(../images/projects.png) no-repeat 0% 50%;
-        padding-left: 20px;
-    }
-}
-
 #watchers {
     select {
         width: 95%;
@@ -633,15 +609,16 @@ span {
     }
 }
 
-.box {
+.box { // Boxes
     padding: 6px;
-    margin-bottom: 10px;
+    margin-bottom: $padding-xl-vertical*2;
     background-color: #f6f6f6;
     color: #505050;
     line-height: 1.5em;
-    border: 1px solid #e4e4e4;
+    // border: 1px solid #e4e4e4;
     word-wrap: break-word;
-    border-radius: 3px;
+    border-radius: 10px;
+    @include rised-component();
 }
 
 div.square {
@@ -667,57 +644,19 @@ div.square {
     width: 49%;
 }
 
-form {
-    display: inline;
-}
-
-input, select {
-    vertical-align: middle;
-    margin-top: 1px;
-    margin-bottom: 1px;
-}
-
-fieldset {
-    border: 1px solid #e4e4e4;
-    margin: 0;
-}
-
-legend {
-    color: #333;
-}
-
-hr {
-    width: 100%;
-    height: 1px;
-    background: #ccc;
-    border: 0;
-}
-
-blockquote {
-    font-style: italic;
-    border-left: 3px solid #e0e0e0;
-    padding-left: 0.6em;
-    margin-left: 2.4em;
-    blockquote {
-        margin-left: 0;
-    }
-}
-
 abbr, span.field-description[title] {
     border-bottom: 1px dotted #aaa;
     cursor: help;
 }
 
-li p {
-    margin-top: 0;
-}
-
-div.issue {
-    background: #ffffdd;
-    padding: 6px;
-    margin-bottom: 6px;
-    border: 1px solid #d7d7d7;
-    border-radius: 3px;
+div.issue { // Issue box
+    // background: #ffffdd;
+    background: $gray-lighter;
+    padding: $padding-large-horizontal;
+    margin-bottom: $padding-large-vertical;
+    // border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    @include rised-component();
 }
 
 p {
@@ -966,7 +905,7 @@ div#activity dd, #search-results dd {
 
 div#activity dt, #search-results dt {
     margin-bottom: 0px;
-    padding-left: 20px;
+    // padding-left: 20px;
     line-height: 18px;
     background-position: 0 50%;
     background-repeat: no-repeat;
@@ -1025,52 +964,6 @@ div#search-results-counts {
         float: left;
         margin-left: 1em;
     }
-}
-
-dt {
-    &.issue {
-        background-image: url(../images/ticket.png);
-    }
-    &.issue-edit {
-        background-image: url(../images/ticket_edit.png);
-    }
-    &.issue-closed {
-        background-image: url(../images/ticket_checked.png);
-    }
-    &.issue-note {
-        background-image: url(../images/ticket_note.png);
-    }
-    &.changeset {
-        background-image: url(../images/changeset.png);
-    }
-    &.news {
-        background-image: url(../images/news.png);
-    }
-    &.message {
-        background-image: url(../images/message.png);
-    }
-    &.reply {
-        background-image: url(../images/comments.png);
-    }
-    &.wiki-page {
-        background-image: url(../images/wiki_edit.png);
-    }
-    &.attachment {
-        background-image: url(../images/attachment.png);
-    }
-    &.document {
-        background-image: url(../images/document.png);
-    }
-    &.project {
-        background-image: url(../images/projects.png);
-    }
-    &.time-entry {
-        background-image: url(../images/time.png);
-    }
-}
-
-#search-results dt.issue.closed {
-    background-image: url(../images/ticket_checked.png);
 }
 
 div#roadmap {
@@ -1198,9 +1091,8 @@ ul.projects {
     }
 }
 
-.my-project {
-    padding-left: 18px;
-    background: url(../images/fav.png) no-repeat 0 50%;
+a.my-project:before {
+    @include fonteawesome-icon($fa-var-star);
 }
 
 #notified-projects > ul, #tracker_project_ids > ul, #custom_field_project_ids > ul {

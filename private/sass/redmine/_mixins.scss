@@ -1,0 +1,95 @@
+/**************************************************************************************************
+ *
+ * Mixins
+ *
+ */
+
+/**************************************************************************************************
+ *
+ *
+ *
+ */
+
+@mixin rised-component() {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+/**************************************************************************************************
+ *
+ * Button
+ *
+ */
+
+@mixin button-variant($color, $background, $border) {
+    color: $color;
+    background-color: $background;
+    border-color: $border;
+
+    &:focus {
+	color: $color;
+	background-color: darken($background, 10%);
+	border-color: darken($border, 25%);
+    }
+    &:hover {
+	color: $color;
+	background-color: darken($background, 10%);
+        border-color: darken($border, 12%);
+    }
+}
+
+@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
+    padding: $padding-vertical $padding-horizontal;
+    font-size: $font-size;
+    line-height: $line-height;
+    border-radius: $border-radius;
+}
+
+@mixin button() {
+    // display: inline-block; // issue in contextual
+    margin-bottom: 0; // For input.btn
+    font-weight: $btn-font-weight;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    border: 1px solid transparent;
+    white-space: nowrap;
+    @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
+}
+
+/**************************************************************************************************
+ *
+ * Icon
+ *
+ */
+
+/*
+@include icon-class-before(administration, $fa-var-cog);
+
+@mixin icon-class-before($class, $icon, $padding: 0) {
+    &.$class:before {
+	@include fa-icon();
+	padding-right: $padding;
+	content: $icon;
+    }
+}
+*/
+
+@mixin fonteawesome-icon($icon, $padding: 1ex*2/3) {
+    @include fa-icon();
+    padding-right: $padding;
+    content: $icon;
+}
+
+@mixin fonteawesome-large-icon() {
+    font-size: (4em / 3);
+    line-height: (3em / 4);
+    vertical-align: -15%;
+}
+
+@mixin alert-variant($background, $border, $text-color) {
+    background-color: $background;
+    border-color: $border;
+    color: $text-color;
+}

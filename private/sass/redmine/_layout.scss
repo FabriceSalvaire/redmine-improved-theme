@@ -4,8 +4,9 @@ html {
 
 body {
     font-family: Verdana, sans-serif;
-    font-size: 12px;
-    color: #333;
+    font-size: 12pt;
+    background-color: $sidebar-background-color;
+    color: $body-colour;
     margin: 0;
     padding: 0;
     min-width: 900px;
@@ -21,19 +22,16 @@ h1, h2, h3, h4 {
     color: #555;
 }
 
-h2, .wiki h1 {
+h2 {
     font-size: 20px;
 }
 
-h3, .wiki h2 {
+h3 {
     font-size: 16px;
 }
 
-h4, .wiki h3 {
-    font-size: 13px;
-}
-
 h4 {
+    font-size: 13px;
     border-bottom: 1px dotted #bbb;
 }
 
@@ -59,33 +57,78 @@ pre, code {
  */
 
 #top-menu {
-    background: #3E5B76;
-    color: #fff;
-    height: 1.8em;
-    font-size: 0.8em;
-    padding: 2px 2px 0px 6px;
+    padding: $padding-base-vertical $padding-base-horizontal $padding-base-vertical $padding-base-horizontal;
+    background: $top-menu-background;
+    color: $top-menu-colour;
+    // height: 1.8em;
+    font-size: $font-size-base;
+
     ul {
         margin: 0;
         padding: 0;
     }
     li {
-        float: left;
+	display: inline;
         list-style-type: none;
-        margin: 0px 0px 0px 0px;
-        padding: 0px 0px 0px 0px;
+        // margin: 0;
+        // padding: 0;
         white-space: nowrap;
     }
     a {
-        color: #fff;
-        margin-right: 8px;
-        font-weight: bold;
+	color: $top-menu-colour;
+	margin-right: $padding-large-horizontal*1.5;
+	font-weight: bold;
+
+	&:hover, &:active {
+            color: $top-menu-hover-colour;
+        }
+
+	/*
+	&.Wiki::before {
+	    @include fonteawesome-icon($fa-var-home);
+	}
+       */
+
+	&.home::before {
+	    @include fonteawesome-icon($fa-var-home);
+	}
+
+	&.my-page::before {
+	    @include fonteawesome-icon($fa-var-user);
+	}
+
+	&.projects::before {
+	    @include fonteawesome-icon($fa-var-list);
+	}
+
+	&.administration::before {
+	    @include fonteawesome-icon($fa-var-cog);
+	}
+
+	&.help::before {
+	    @include fonteawesome-icon($fa-var-life-saver);
+	}
+
+	&.my-account::before {
+	    @include fonteawesome-icon($fa-var-cog);
+	}
+
+	&.logout::before {
+	    @include fonteawesome-icon($fa-var-sign-out);
+	}
     }
     #loggedas {
         float: right;
-        margin-right: 0.5em;
-        color: #fff;
+        // margin-right: 0.5em;
+        // color: #fff;
     }
 }
+
+/*
+div #top-menu {
+    @include rised-component();
+}
+*/
 
 /*******************************************************************************
  *
@@ -103,16 +146,24 @@ pre, code {
  *
  */
 
-#header {
-    min-height: 5.3em;
-    margin: 0;
-    background-color: #628DB6;
-    color: #f8f8f8;
-    padding: 4px 8px 20px 6px;
+div #header {
+    // see also #main-menu
+
     position: relative;
+    min-height: 5.3em;
+    padding: $padding-base-vertical $padding-base-horizontal 25px $padding-base-horizontal; // flyout ?
+    // margin: 0;
+    background-color: $header-background-colour;
+    color: $header-colour;
+    @include rised-component();
+
     a {
-        color: #f8f8f8;
+        color: $header-colour;
+	&:hover {
+	    color: $gray-base;
+	}
     }
+
     h1 {
         overflow: hidden;
         text-overflow: ellipsis;
@@ -144,11 +195,14 @@ pre, code {
 #main-menu {
     position: absolute;
     bottom: 0px;
-    left: 6px;
-    margin-right: -500px;
+    // left: 6px;
+    // margin-right: -500px;
     width: 100%;
+    font-size: $font-size-large;
+
     ul {
         margin: 0;
+	// margin-left: $padding-base-horizontal;
         padding: 0;
         width: 100%;
         white-space: nowrap;
@@ -160,36 +214,51 @@ pre, code {
         padding: 0px 0px 0px 0px;
         white-space: nowrap;
         display: inline-block;
-        a {
-            display: block;
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0;
-            padding: 4px 10px 4px 10px;
-            &:hover {
-                background: #759FCF;
-                color: #fff;
-            }
-        }
         &:hover ul.menu-children, ul.menu-children.visible {
             display: block;
         }
         a {
-            &.selected {
-                background: #fff;
-                color: #555;
+            display: block;
+            color: $main-menu-colour;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0;
+	    margin-bottom: $padding-base-vertical;
+            padding: 4px 10px 4px 10px;
+            &:hover {
+		border-radius: 5px;
+		color: $main-menu-colour;
+		background-color: $main-menu-hover-colour;
+            }
+	    &.selected {
+		border-radius: 5px;
+		background-color: $main-menu-active-colour;
+		@include rised-component();
+
                 &:hover {
-                    background: #fff;
-                    color: #555;
+		    background-color: $main-menu-hover-colour;
                 }
             }
             &.new-object {
-                background-color: #759FCF;
+		margin-right: $padding-large-horizontal;
+		width: 25px;
+		height: 25px;
+		line-height: 25px;
+		padding: 5px;
+		border-radius: 50%;
+		text-align: center;
+		vertical-align: middle;
+		background-color: $main-menu-active-colour;
+		@include rised-component();
+
+		&:hover {
+		    background-color: $main-menu-hover-colour;
+		    color: $main-menu-colour;
+		}
             }
         }
     }
-    .menu-children {
+    .menu-children { // Plus menu
         display: none;
         position: absolute;
         width: inherit;
@@ -206,6 +275,7 @@ pre, code {
                 color: #555;
                 background-color: #fff;
                 font-weight: normal;
+		border-radius: 0;
                 &:hover {
                     color: #fff;
                     background-color: #759FCF;
@@ -291,7 +361,7 @@ pre, code {
  */
 
 #main {
-    background-color: #EEEEEE;
+    // background-color: #EEEEEE;
 }
 
 /*******************************************************************************
@@ -300,23 +370,28 @@ pre, code {
  *
  */
 
+/* ???
 ul.flat {
     margin: 0;
     padding: 0;
 }
+*/
 
 #sidebar {
     float: right;
-    width: 22%;
-    position: relative;
-    z-index: 9;
-    padding: 0;
-    margin: 0;
+    width: $sidebar-width;
+    // position: relative;
+    // z-index: 9;
+    // padding: 0;
+    // margin: 0;
+
     h3 {
-        font-size: 14px;
-        margin-top: 14px;
-        color: #666;
+	font-size: $font-size-large;
+	margin-top: $font-size-large;
+	margin-bottom: $font-size-large/2;
+	// color: #666;
     }
+
     hr {
         width: 100%;
         margin: 0 auto;
@@ -328,18 +403,24 @@ ul.flat {
 	// left: -6px;
 	// color: #ccc;
     }
+
     .contextual {
         margin-right: 1em;
     }
-    ul {
-        margin: 0;
-        padding: 0;
+
+    ul, ul.flat {
+	margin: 0;
+	padding: 0;
+
+	li {
+	    font-size: $font-size-base;
+	    list-style-type: none;
+	    margin: 0px 2px $font-size-base/2 0px;
+	    // padding: 0;
+	}
     }
-    ul li, ul.flat li {
-	list-style-type: none;
-	margin: 0px 2px 0px 0px;
-	padding: 0px 0px 0px 0px;
-    }
+
+    // ???
     div.wiki ul {
 	margin: inherit;
 	padding-left: 40px;
@@ -356,24 +437,14 @@ ul.flat {
  */
 
 #content {
-    width: 75%;
-    background-color: #fff;
-    margin: 0px;
-    border-right: 1px solid #ddd;
-    padding: 6px 10px 10px 10px;
+    width: $content-width;
+    // min-height: 600px;
+    // height: 600px;
+    background-color: $content-background-color;
+    // margin: 0;
+    border-right: 1px solid $gray-light;
+    padding: $padding-large-vertical $padding-large-horizontal $padding-base-vertical $padding-large-horizontal;
     z-index: 10;
-    // width: 75%;
-    // padding-left: 0;
-    // margin-top: 0px;
-    // padding: 6px 10px 10px 10px;
-}
-
-html > body #content {
-    min-height: 600px;
-}
-
-* html body #content {
-    height: 600px;
 }
 
 /*******************************************************************************
