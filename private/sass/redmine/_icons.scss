@@ -7,7 +7,7 @@
 .icon {
     background-position: 0% 50%;
     background-repeat: no-repeat;
-    padding-left: 20px; // to make room for the icon
+    // padding-left: 20px; // to make room for the icon
     padding-top: 2px;
     padding-bottom: 3px;
 }
@@ -15,21 +15,21 @@
 .icon-only {
     background-position: 0% 50%;
     background-repeat: no-repeat;
-    padding-left: 16px;
+    // padding-left: 16px;
 }
 
 a.icon-only {
-    display: inline-block;
-    width: 0;
+    // display: inline-block; // Issue: wiki icon-edit is moved at left, issue new version is moved downwards
+    // width: 0;
     height: 16px;
     overflow: hidden;
     padding-top: 0;
     padding-bottom: 0;
-    font-size: 8px;
+    // font-size: 8px;
     vertical-align: text-bottom;
-    &::after {
-        content: "&nbsp;";
-    }
+    // &::after {
+    //     content: "&nbsp;";
+    // }
 }
 
 /*******************************************************************************
@@ -63,7 +63,6 @@ a.icon-del:before {
 
 a.icon-move:before {
     // used for rename
-    // background-image: url(../images/move.png);
     @include fonteawesome-icon($fa-var-pencil);
 }
 
@@ -97,10 +96,11 @@ a.icon-save:before {
 .icon-user {
     // user
     background-image: url(../images/user.png);
+    // @include fonteawesome-icon($fa-var-user);
 }
 
-.icon-projects {
-    background-image: url(../images/projects.png);
+span.icon-projects:before {
+    @include fonteawesome-icon($fa-var-cube);
 }
 
 .icon-help {
@@ -126,7 +126,6 @@ span.icon-time:before {
 
 a.icon-time-add:before {
     @include fonteawesome-icon($fa-var-clock-o);
-    // background-image: url(../images/time_add.png);
 }
 
 .icon-stats {
@@ -185,10 +184,10 @@ a.icon-comment:before {
     background-image: url(../images/server_key.png);
 }
 
-.icon-issue {
+span.icon-issue:before {
     // div.issues h3
     // ticket sticky-note
-    background-image: url(../images/ticket.png);
+    @include fonteawesome-icon($fa-var-file-text);
 }
 
 a.icon-zoom-in:before {
@@ -318,11 +317,6 @@ tr.ui-sortable-helper {
     border: 1px solid #e4e4e4;
 }
 
-.contextual > .icon:not(:first-child),
-.buttons > .icon:not(:first-child) {
-    margin-left: 5px;
-}
-
 /*******************************************************************************
  *
  * Gravatar
@@ -370,7 +364,7 @@ td.username img.gravatar {
 
 /*******************************************************************************
  *
- *
+ * To be moved ???
  *
  */
 

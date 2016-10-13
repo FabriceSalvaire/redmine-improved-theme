@@ -7,25 +7,29 @@
 table.cal {
     border-collapse: collapse;
     width: 100%;
-    margin: 0px 0 6px 0;
-    border: 1px solid #d7d7d7;
+    margin: 0 0 $padding-base-vertical 0;
+    border: $splitter-border;
+
     thead th {
         width: 14%;
-        background-color: #EEEEEE;
+        background-color: $gray-lighter;
         padding: 4px;
         &.week-number {
             width: auto;
         }
     }
+
     tbody tr {
         height: 100px;
     }
+
     td {
-        border: 1px solid #d7d7d7;
+        border: 1px solid #d7d7d7; // Fixme: $splitter-border
         vertical-align: top;
         font-size: 0.9em;
+
         &.week-number {
-            background-color: #EEEEEE;
+            background-color: $gray-lighter;
             padding: 4px;
             border: none;
             font-size: 1em;
@@ -44,33 +48,41 @@ table.cal {
             }
         }
     }
-    .starting a {
-        background: url(../images/bullet_go.png) no-repeat -1px -2px;
-        padding-left: 16px;
+
+    // Decorations
+    .starting a:before {
+	@include fonteawesome-icon($fa-var-chevron-right);
+	color: $brand-success;
+    }
+    .ending a:before  {
+	@include fonteawesome-icon($fa-var-chevron-left);
+	color: $brand-danger;
+    }
+    .starting.ending a:before { // Fixme: should apply to open-closed same day
+	@include fonteawesome-icon($fa-var-diamond);
+	color: $brand-danger;
     }
 }
 
-p.cal.legend .starting {
-    background: url(../images/bullet_go.png) no-repeat -1px -2px;
-    padding-left: 16px;
+@mixin calendar-legend-icon($icon, $colour) {
+    @include fonteawesome-icon($icon);
+    color: $colour;
+    width: 1.5em;
 }
 
-table.cal .ending a, p.cal.legend .ending {
-    background: url(../images/bullet_end.png) no-repeat -1px -2px;
-    padding-left: 16px;
-}
-
-table.cal .starting.ending a {
-    background: url(../images/bullet_diamond.png) no-repeat -1px -2px;
-    padding-left: 16px;
-}
-
+// Calendar legent
 p.cal.legend {
-    .starting.ending {
-        background: url(../images/bullet_diamond.png) no-repeat -1px -2px;
-        padding-left: 16px;
-    }
     span {
-        display: block;
+        display: block; // as an unstyled list
+
+	&.starting:before {
+	    @include calendar-legend-icon($fa-var-chevron-right, $brand-success);
+	}
+	&.ending:before {
+	    @include calendar-legend-icon($fa-var-chevron-left, $brand-danger);
+	}
+	&.starting.ending:before {
+	    @include calendar-legend-icon($fa-var-diamond, $brand-danger);
+	}
     }
 }

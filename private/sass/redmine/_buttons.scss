@@ -1,0 +1,80 @@
+/***************************************************************************************************
+ *
+ * Buttons
+ *
+ */
+
+input {
+    &[type=submit] {
+	@include button();
+	@include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+
+	&[name=commit], &[name=continue] {
+	    @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+	}
+    }
+}
+
+a {
+    &[onclick] {
+	@include button();
+	@include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+	// Fixme: fix size
+	//   line-height: 1.42857;
+
+	&.icon-checked {
+	    @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+	}
+    }
+
+    &.icon-copy,
+    &.icon-history,
+    &.icon-time-add,
+    &.icon-zoom-in,
+    &.icon-zoom-out
+    {
+	@include button();
+	@include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+    }
+
+    &.icon.icon-add {
+	@include button();
+	@include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+    }
+
+    &.icon.icon-edit,
+    &.icon-move,
+    &.icon-reload {
+	@include button();
+	@include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+    }
+
+    &.icon-lock,
+    &.icon.icon-del {
+	@include button();
+	@include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+    }
+}
+
+.description,
+#issue_tree {
+    .contextual a {
+	@include button();
+	@include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+    }
+}
+
+.contextual {
+    a {
+	&[data-method] { // Here so as to don't select logout
+	    @include button();
+	    @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+	}
+    }
+}
+
+// Add space between icons/buttons
+.contextual > .icon:not(:first-child),
+.buttons > .icon:not(:first-child) {
+    margin-left: $padding-large-horizontal;
+}

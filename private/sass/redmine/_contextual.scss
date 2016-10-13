@@ -16,28 +16,12 @@
         font-size: 0.9em;
     }
 
+    /*
     a {
 	padding: 0; // Check
-	margin: $padding-large-horizontal;
+	margin-left: $padding-large-horizontal;
     }
-
-    a.icon.icon-add {
-	@include button();
-	@include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
-	font-weight: 600;
-    }
-
-    a.icon.icon-edit {
-	@include button();
-	@include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
-	font-weight: 600;
-    }
-
-    a.icon.icon-del {
-	@include button();
-	@include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
-	font-weight: 600;
-    }
+   */
 }
 
 // here ?

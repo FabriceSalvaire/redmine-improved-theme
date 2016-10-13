@@ -148,7 +148,7 @@ $icon-add-colour: #37B853; // green hue
 $line-height-base: 1.428571429 !default; // 20/14
 $border-radius-base: 4px !default;
 
-$btn-font-weight:                normal !default;
+$btn-font-weight:                600; // normal !default;
 
 $btn-default-color:              #333 !default;
 $btn-default-bg:                 #fff !default;
@@ -175,3 +175,9 @@ $btn-danger-bg:                  $brand-danger !default;
 $btn-danger-border:              darken($btn-danger-bg, 5%) !default;
 
 $btn-border-radius-base:         $border-radius-base !default;
+
+/**************************************************************************************************
+ * Splitter
+ */
+
+$splitter-border: 1px solid lighten($gray-base, 70%);

@@ -12,6 +12,10 @@ jQuery(document).ready(function($){
     	return $(this).text() === ", ";
     }).remove();
 
+    // Remove "edit this section"
+    // div.wiki-page
+    $('.contextual a.icon-only.icon-edit').text('');
+
     /*
     $('#top-menu, #header').wrapInner('<div class="outer-container"></div>');
     $('#main-menu').wrapInner('<div class="outer-container"></div>').detach().appendTo('#header');

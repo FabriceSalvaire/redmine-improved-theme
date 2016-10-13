@@ -47,6 +47,7 @@
 @mixin button() {
     // display: inline-block; // issue in contextual
     margin-bottom: 0; // For input.btn
+    font-size: $font-size-base;
     font-weight: $btn-font-weight;
     text-align: center;
     vertical-align: middle;

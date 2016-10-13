@@ -442,7 +442,7 @@ ul.flat {
     // height: 600px;
     background-color: $content-background-color;
     // margin: 0;
-    border-right: 1px solid $gray-light;
+    border-right: $splitter-border;
     padding: $padding-large-vertical $padding-large-horizontal $padding-base-vertical $padding-large-horizontal;
     z-index: 10;
 }
@@ -465,7 +465,7 @@ ul.flat {
 
 #footer {
     clear: both;
-    border-top: 1px solid #bbb;
+    border-top: $splitter-border;
     font-size: 0.9em;
     color: #aaa;
     padding: 5px;
