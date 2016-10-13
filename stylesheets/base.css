@@ -2366,6 +2366,47 @@ input[type=submit] {
       background-color: #449d44;
       border-color: #398439; }
 
+a.button {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  margin-left: 16px; }
+  a.button:focus {
+    color: #fff;
+    background-color: #286090;
+    border-color: #122b40; }
+  a.button:hover {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74; }
+  a.button.button-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a; }
+    a.button.button-danger:focus {
+      color: #fff;
+      background-color: #c9302c;
+      border-color: #761c19; }
+    a.button.button-danger:hover {
+      color: #fff;
+      background-color: #c9302c;
+      border-color: #ac2925; }
+
 a[onclick] {
   margin-bottom: 0;
   font-size: 14px;
@@ -4422,7 +4463,8 @@ table.cal {
   border-collapse: collapse;
   width: 100%;
   margin: 0 0 6px 0;
-  border: 1px solid #b3b3b3; }
+  border: 1px solid #b3b3b3;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
   table.cal thead th {
     width: 14%;
     background-color: #eeeeee;
