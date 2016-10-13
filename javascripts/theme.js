@@ -16,6 +16,41 @@ jQuery(document).ready(function($){
     // div.wiki-page
     $('.contextual a.icon-only.icon-edit').text('');
 
+    // Wiki edit button group : remove | and add button class
+    // input should be button
+    var button_group = $('form#wiki_form > p');
+    button_group.contents().filter(function() {
+	return $(this).text().includes('|');
+    }).remove();
+    button_group.find('a').toggleClass('button');
+    button_group.find('a:last').toggleClass('button-danger');
+
+    // Replace navigation icon «» in calendar page
+    var query_form_links = $('form#query_form p a');
+    query_form_links.filter(function() {
+    	return $(this).text().startsWith('«');
+    }).text(function (index, text) {
+    	return text.slice(1);
+    }).prepend('<i class="fa fa-chevron-left" aria-hidden="true"></i>');
+    query_form_links.filter(function() {
+	return $(this).text().endsWith('»');
+    }).text(function (index, text) {
+	return text.slice(0, -1);
+    }).append('<i class="fa fa-chevron-right" aria-hidden="true"></i>');
+
+    // Fixme: fix for «
+    // var links = $('div.issue div.next-prev-links');
+    // links.filter(function() {
+    // 	return $(this).text().startsWith('«');
+    // }).text(function (index, text) {
+    // 	return text.slice(1);
+    // }).prepend('<i class="fa fa-chevron-left" aria-hidden="true"></i>');
+    // links.find('a').filter(function() {
+    // 	return $(this).text().endsWith('»');
+    // }).text(function (index, text) {
+    // 	return text.slice(0, -1);
+    // }).append('<i class="fa fa-chevron-right" aria-hidden="true"></i>');
+
     /*
     $('#top-menu, #header').wrapInner('<div class="outer-container"></div>');
     $('#main-menu').wrapInner('<div class="outer-container"></div>').detach().appendTo('#header');
