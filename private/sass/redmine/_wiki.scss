@@ -41,28 +41,30 @@ div.wiki {
         border: 1px solid #bbb;
         padding: 4px;
     }
+
     td, th {
         border: 1px solid #bbb;
         padding: 4px;
     }
+
     .noborder {
         border: 0;
         td, th {
             border: 0;
         }
     }
-    .external {
-        background-position: 0% 60%;
-        background-repeat: no-repeat;
-        padding-left: 12px;
-        background-image: url(../images/external.png);
-    }
+
     a {
         word-wrap: break-word;
         &.new {
             color: #b73535;
         }
+
+	&.external:before {
+	    @include fonteawesome-icon($fa-var-external-link);
+	}
     }
+
     ul, ol {
         margin-bottom: 1em;
     }
@@ -71,6 +73,7 @@ div.wiki {
             margin-bottom: 0;
         }
     }
+
     pre {
         margin: 1em 1em 1em 1.6em;
         padding: 8px;
@@ -81,6 +84,7 @@ div.wiki {
         overflow-x: auto;
         overflow-y: hidden;
     }
+
     ul.toc {
         background-color: #ffffdd;
         border: 1px solid #e4e4e4;
@@ -128,6 +132,7 @@ div.wiki {
 	    }
 	}
     }
+
     img {
 	vertical-align: middle;
 	max-width: 100%;
