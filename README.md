@@ -1,4 +1,4 @@
-This repository contains a SASS based [Redmine](http://www.redmine.org) theme forked from the official one (public/stylesheets/application.css).
+This repository contains a SASS based [Redmine](http://www.redmine.org) theme forked from the vanilla default Redmine theme (public/stylesheets/application.css).
 
 It supports Redmine v3.3.
 
@@ -16,7 +16,7 @@ First steps:
 
 Ongoing changes :
 
-* improve readability for a 150 dpi screen (more spaces, larger font size)
+* improve readability on a 150 dpi screen (more spaces, larger font size)
 * convert icons to FontAwesome
 * replace inline values by variables
 
@@ -27,7 +27,11 @@ Ongoing changes :
 * use custom settings to help user to customise the stylesheet
 * only support modern browser
 * use the power of SASS
-* use jquery to patch the DOM
+* use jquery to patch the DOM (patched erb would break Redmine for other themes)
+
+# Difficulties
+
+* Redmine HTML code is prior to Bootstrap era and its semantic is not well defined. We can patch the DOM when it is mandatory, but it is a last resort.
 
 # Redmine Links
 
@@ -38,7 +42,7 @@ Ongoing changes :
 
 Steps to install this theme :
 
-* clone the repository or unzip the archive in the *public/theme* directory of yout Redmine instance,
+* clone the repository or unzip the archive in the *public/theme* directory of your Redmine instance,
 * check file permissions
 * the directory name defines the theme name
 * select this theme in Administration / Settings / Display / Theme
