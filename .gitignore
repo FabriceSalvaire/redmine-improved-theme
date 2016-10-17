@@ -1,5 +1,12 @@
 *~
 
+images/
 node_modules
-# stylesheets
+private/sass/libs/fontawesome/
+setenv.sh
 vendor
+
+# stylesheets
+TODO.txt
+private/sass/redmine/notes/
+private/sass/redmine/trash/
