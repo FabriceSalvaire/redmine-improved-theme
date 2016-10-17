@@ -71,3 +71,7 @@ dt {
 #search-results dt.issue.closed {
     background-image: url(../images/ticket_checked.png);
 }
+
+a.my-project:before {
+    @include fonteawesome-icon($fa-var-star);
+}
