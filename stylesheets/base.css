@@ -3115,6 +3115,14 @@ a.toggle-checkboxes {
  * Tables
  *
  */
+td.center {
+  text-align: center; }
+
+/*******************************************************************************
+ *
+ * table list
+ *
+ */
 table.list, .table-list {
   border: 1px solid #e4e4e4;
   border-collapse: collapse;
@@ -3146,7 +3154,20 @@ table.list td {
   table.list td.buttons {
     width: 15%;
     white-space: nowrap;
-    text-align: right; }
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  table.list td.reorder {
+    width: 15%;
+    white-space: nowrap;
+    text-align: center; }
+
+table.list table.progress td {
+  padding-right: 0px; }
+
+table.list caption {
+  text-align: left;
+  padding: 0.5em 0.5em 0.5em 0; }
 
 div.buttons {
   width: 15%;
@@ -3159,18 +3180,6 @@ table.list td.buttons a, div.buttons a {
 table.list td.buttons img, div.buttons img {
   vertical-align: middle; }
 
-table.list td.reorder {
-  width: 15%;
-  white-space: nowrap;
-  text-align: center; }
-
-table.list table.progress td {
-  padding-right: 0px; }
-
-table.list caption {
-  text-align: left;
-  padding: 0.5em 0.5em 0.5em 0; }
-
 #role-permissions-trackers table.list th {
   white-space: normal; }
 
@@ -3179,6 +3188,11 @@ table.list caption {
   vertical-align: top;
   padding: 2px; }
 
+/*******************************************************************************
+ *
+ *
+ *
+ */
 tr.project td.name a {
   white-space: nowrap; }
 
@@ -3323,10 +3337,6 @@ tr.changeset {
   tr.changeset ul {
     margin-top: 0px;
     margin-bottom: 0px; }
-
-ol {
-  margin-top: 0px;
-  margin-bottom: 0px; }
 
 tr.changeset td.revision_graph {
   width: 15%;
@@ -3539,8 +3549,14 @@ table.query-columns {
   .query-totals .value {
     font-weight: bold; }
 
-td.center {
-  text-align: center; }
+/***************************************************************************************************
+ *
+ * From Tables
+ *
+*/
+ol {
+  margin-top: 0px;
+  margin-bottom: 0px; }
 
 #watchers select {
   width: 95%;
@@ -4771,15 +4787,19 @@ div.wiki {
     border: 0; }
     div.wiki .noborder td, div.wiki .noborder th {
       border: 0; }
-  div.wiki .external {
-    background-position: 0% 60%;
-    background-repeat: no-repeat;
-    padding-left: 12px;
-    background-image: url(../images/external.png); }
   div.wiki a {
     word-wrap: break-word; }
     div.wiki a.new {
       color: #b73535; }
+    div.wiki a.external:before {
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-right: 0.66667ex;
+      content: ""; }
   div.wiki ul, div.wiki ol {
     margin-bottom: 1em; }
   div.wiki li > ul, div.wiki li > ol {
