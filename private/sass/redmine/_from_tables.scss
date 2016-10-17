@@ -593,7 +593,7 @@ input#content_comments {
 #custom_field_project_ids {
     &  > ul {
 	// limit the height of the box
-        max-height: 250px;
+        max-height: 500px;
 	overflow-y: auto;
     }
 }
