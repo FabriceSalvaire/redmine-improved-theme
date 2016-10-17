@@ -50,10 +50,12 @@ table.list {
 		padding: 0px;
             }
 	}
-	&.buttons {
+	&.buttons { // contains buttons
             width: 15%;
             white-space: nowrap;
             text-align: right;
+	    padding-top: $padding-large-vertical;
+	    padding-bottom: $padding-large-vertical;
 	}
 	&.reorder {
         width: 15%;
