@@ -4,8 +4,11 @@ It supports Redmine v3.3.
 
 This work is licensed under [CC by-nc-na](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
 
-![Overview](https://github.com/FabriceSalvaire/redmine-improved-theme/raw/master/screenshots/redmine-overview.png)
-![Wiki](https://github.com/FabriceSalvaire/redmine-improved-theme/raw/master/screenshots/redmine-wiki.png)
+![Overview](https://github.com/FabriceSalvaire/redmine-improved-theme/raw/master/screenshots/redmine-project-overview.png)
+![Roadmap](https://github.com/FabriceSalvaire/redmine-improved-theme/raw/master/screenshots/redmine-project-roadmap.png)
+![Issues](https://github.com/FabriceSalvaire/redmine-improved-theme/raw/master/screenshots/redmine-project-issues.png)
+![Issue](https://github.com/FabriceSalvaire/redmine-improved-theme/raw/master/screenshots/redmine-project-issue.png)
+![Wiki](https://github.com/FabriceSalvaire/redmine-improved-theme/raw/master/screenshots/redmine-project-wiki.png)
 
 # Changes from the original
 
