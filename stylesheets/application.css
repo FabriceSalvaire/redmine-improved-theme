@@ -2321,6 +2321,10 @@ blockquote {
 li p {
   margin-top: 0; }
 
+ol {
+  margin-top: 0;
+  margin-bottom: 0; }
+
 /***************************************************************************************************
  *
  * Buttons
@@ -2984,6 +2988,7 @@ ul.flat {
  */
 #content {
   width: 78%;
+  min-height: 700px;
   background-color: white;
   border-right: 1px solid #b3b3b3;
   padding: 10px 16px 6px 16px;
@@ -3554,10 +3559,6 @@ table.query-columns {
  * From Tables
  *
 */
-ol {
-  margin-top: 0px;
-  margin-bottom: 0px; }
-
 #watchers select {
   width: 95%;
   display: block; }
@@ -3941,47 +3942,6 @@ input#issue_subject, input#document_title {
 select#issue_done_ratio {
   width: 95px; }
 
-ul.projects {
-  margin: 0;
-  padding-left: 1em; }
-  ul.projects ul {
-    padding-left: 1.6em; }
-  ul.projects.root {
-    margin: 0;
-    padding: 0; }
-  ul.projects li {
-    list-style-type: none; }
-
-#projects-index ul.projects ul.projects {
-  border-left: 3px solid #e0e0e0;
-  padding-left: 1em; }
-
-#projects-index ul.projects li.root {
-  margin-bottom: 1em; }
-
-#projects-index ul.projects li.child {
-  margin-top: 1em; }
-
-#projects-index ul.projects div.root a.project {
-  font-family: "Trebuchet MS", Verdana, sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  margin: 0 0 10px 0; }
-
-a.my-project:before {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding-right: 0.66667ex;
-  content: ""; }
-
-#notified-projects > ul, #tracker_project_ids > ul, #custom_field_project_ids > ul {
-  max-height: 250px;
-  overflow-y: auto; }
-
 #related-issues li img {
   vertical-align: middle; }
 
@@ -4039,13 +3999,51 @@ textarea#custom_field_possible_values, textarea#custom_field_default_value {
 input#content_comments {
   width: 99%; }
 
-/***************************************************************************************************
- *
- *
- *
- */
 #search-form fieldset p {
   margin: 0.2em 0; }
+
+/***************************************************************************************************
+ *
+ * List / Tree View
+ *
+ */
+#notified-projects > ul,
+#tracker_project_ids > ul,
+#custom_field_project_ids > ul {
+  max-height: 500px;
+  overflow-y: auto; }
+
+/***************************************************************************************************
+ *
+ * Project List
+ *
+ */
+ul.projects {
+  margin: 0;
+  padding-left: 1em; }
+  ul.projects ul {
+    padding-left: 1.6em; }
+  ul.projects.root {
+    margin: 0;
+    padding: 0; }
+  ul.projects li {
+    list-style-type: none; }
+
+#projects-index ul.projects ul.projects {
+  border-left: 3px solid #e0e0e0;
+  padding-left: 1em; }
+
+#projects-index ul.projects li.root {
+  margin-bottom: 1em; }
+
+#projects-index ul.projects li.child {
+  margin-top: 1em; }
+
+#projects-index ul.projects div.root a.project {
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 0 10px 0; }
 
 /***************************************************************************************************
  *
@@ -4788,18 +4786,14 @@ div.wiki {
     div.wiki .noborder td, div.wiki .noborder th {
       border: 0; }
   div.wiki a {
-    word-wrap: break-word; }
+    word-wrap: break-word;
+    /*
+	&.external:before {
+	    @include fonteawesome-icon($fa-var-external-link);
+	}
+       */ }
     div.wiki a.new {
       color: #b73535; }
-    div.wiki a.external:before {
-      display: inline-block;
-      font: normal normal normal 14px/1 FontAwesome;
-      font-size: inherit;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      padding-right: 0.66667ex;
-      content: ""; }
   div.wiki ul, div.wiki ol {
     margin-bottom: 1em; }
   div.wiki li > ul, div.wiki li > ol {
@@ -5933,3 +5927,13 @@ dt.time-entry {
 
 #search-results dt.issue.closed {
   background-image: url(../images/ticket_checked.png); }
+
+a.my-project:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-right: 0.66667ex;
+  content: ""; }
