@@ -438,7 +438,7 @@ ul.flat {
 
 #content {
     width: $content-width;
-    // min-height: 600px;
+    min-height: 700px; // Fixme: place footer at bottom
     // height: 600px;
     background-color: $content-background-color;
     // margin: 0;
