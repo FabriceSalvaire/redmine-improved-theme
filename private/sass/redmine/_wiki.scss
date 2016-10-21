@@ -60,9 +60,11 @@ div.wiki {
             color: #b73535;
         }
 
+	/*
 	&.external:before {
 	    @include fonteawesome-icon($fa-var-external-link);
 	}
+       */
     }
 
     ul, ol {
