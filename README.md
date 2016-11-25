@@ -48,7 +48,7 @@ Steps to install this theme :
 * clone the repository or unzip the archive in the *public/theme* directory of your Redmine instance,
 * copy *images* directory : *cp -r ../../images/ .*
 * check file permissions
-* the directory name defines the theme name
+* theme's name is defined by the directory name
 * select this theme in Administration / Settings / Display / Theme
 
 # How to generate the stylesheet from scratch
