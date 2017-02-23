@@ -87,52 +87,82 @@ div.wiki {
         overflow-y: hidden;
     }
 
-    ul.toc {
-        background-color: #ffffdd;
-        border: 1px solid #e4e4e4;
-        padding: 4px;
-        line-height: 1.2em;
-        margin-bottom: 12px;
-        margin-right: 12px;
-        margin-left: 0;
-        display: table;
-	ul.toc {
-	    &.right {
-		float: right;
-		margin-left: 12px;
-		margin-right: 0;
-		width: auto;
-	    }
-	    &.left {
-		float: left;
-		margin-right: 12px;
-		margin-left: 0;
-		width: auto;
-	    }
-	    ul {
-		margin: 0;
-		padding: 0;
-	    }
-	    li {
-		list-style-type: none;
-		margin: 0;
-		font-size: 12px;
-		li {
-		    margin-left: 1.5em;
-		    font-size: 10px;
-		}
-	    }
-	    a {
-		font-size: 0.9em;
-		font-weight: normal;
-		text-decoration: none;
-		color: #606060;
-		&:hover {
-		    color: #c61a1a;
-		    text-decoration: underline;
-		}
-	    }
+    .toc {
+	ul {
+	    list-style: none;
 	}
+    }
+
+    ul.toc { // Top level h1
+        margin-left: $padding-xl-horizontal;
+        // margin-right: $padding-base-horizontal;
+        margin-bottom: $padding-xl-horizontal;
+        border: 1px solid $gray;
+	border-radius: 5px;
+        padding: $padding-base-horizontal;
+        display: table; // to restrict horizontally the box to the table
+	list-style: none; // cf. infra, better ?
+	// font-size: $font-size-base;
+
+        // background-color: $gray-lighter;
+        // line-height: 1.2em;
+
+	ul, li {
+	    margin-left: $padding-base-horizontal;
+	    padding-left: 0;
+	}
+
+	li { // h1
+            margin-top: $padding-large-vertical;
+	    font-weight: 900;
+	}
+	ul li { // h2
+	    margin-top: $padding-small-vertical;
+	    font-weight: 600;
+	}
+	ul ul li { // h3 ...
+	    margin-top: 0;
+	    font-weight: normal;
+	}
+
+	// Useless since ul.toc > ul
+	// ul.toc {
+	//     &.right {
+	// 	float: right;
+	// 	margin-left: 12px;
+	// 	margin-right: 0;
+	// 	width: auto;
+	//     }
+	//     &.left {
+	// 	float: left;
+	// 	margin-right: 12px;
+	// 	margin-left: 0;
+	// 	width: auto;
+	//     }
+	//     ul {
+	// 	margin: 0;
+	// 	padding: 0;
+	//     }
+	//     li {
+	// 	// list-style-type: none;
+	// 	margin: 0;
+	// 	font-size: 12px;
+	// 	li {
+	// 	    margin-left: 1.5em;
+	// 	    font-size: 10px;
+	// 	}
+	//     }
+	//     a {
+	// 	font-size: 0.9em;
+	// 	font-weight: normal;
+	// 	text-decoration: none;
+	// 	color: #606060;
+	// 	&:hover {
+	// 	    color: #c61a1a;
+	// 	    text-decoration: underline;
+	// 	}
+	//     }
+	// }
     }
 
     img {
