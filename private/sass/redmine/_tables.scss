@@ -8,6 +8,15 @@ td.center {
     text-align: center;
 }
 
+tr {
+    &.odd {
+	background-color: #f6f7f8; // lighten($gray-base, 95%) $gray-lighter
+    }
+    &.even {
+	background-color: white;
+    }
+}
+
 /*******************************************************************************
  *
  * table list
@@ -144,92 +153,10 @@ tr {
             padding-left: 12.5em;
         }
     }
-    &.issue {
-        text-align: center;
-        white-space: nowrap;
-        td {
-            &.subject, &.category {
-                white-space: normal;
-            }
-        }
-    }
 }
 
 td.assigned_to {
     white-space: normal;
-}
-
-tr.issue td {
-    &.string, &.text, &.list, &.relations, &.parent {
-        white-space: normal;
-    }
-    &.relations {
-        text-align: left;
-    }
-    &.done_ratio table.progress {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    &.relations span {
-        white-space: nowrap;
-    }
-}
-
-table.issues td.description {
-    color: #777;
-    font-size: 90%;
-    padding: 4px 4px 4px 24px;
-    text-align: left;
-    white-space: normal;
-    pre {
-        white-space: normal;
-    }
-}
-
-tr.issue {
-    &.idnt td.subject {
-        background: url(../images/bullet_arrow_right.png) no-repeat 0 50%;
-    }
-    &.idnt-1 td.subject {
-        padding-left: 24px;
-        background-position: 8px 50%;
-    }
-    &.idnt-2 td.subject {
-        padding-left: 40px;
-        background-position: 24px 50%;
-    }
-    &.idnt-3 td.subject {
-        padding-left: 56px;
-        background-position: 40px 50%;
-    }
-    &.idnt-4 td.subject {
-        padding-left: 72px;
-        background-position: 56px 50%;
-    }
-    &.idnt-5 td.subject {
-        padding-left: 88px;
-        background-position: 72px 50%;
-    }
-    &.idnt-6 td.subject {
-        padding-left: 104px;
-        background-position: 88px 50%;
-    }
-    &.idnt-7 td.subject {
-        padding-left: 120px;
-        background-position: 104px 50%;
-    }
-    &.idnt-8 td.subject {
-        padding-left: 136px;
-        background-position: 120px 50%;
-    }
-    &.idnt-9 td.subject {
-        padding-left: 152px;
-        background-position: 136px 50%;
-    }
-}
-
-table.issue-report {
-    table-layout: fixed;
 }
 
 tr {
@@ -493,14 +420,6 @@ table {
     p {
         margin: 0;
     }
-}
-
-.odd {
-    background-color: #f6f7f8;
-}
-
-.even {
-    background-color: #fff;
 }
 
 tr.builtin td.name {

@@ -181,3 +181,16 @@ $btn-border-radius-base:         $border-radius-base !default;
  */
 
 $splitter-border: 1px solid lighten($gray-base, 70%);
+
+/**************************************************************************************************
+ * Issue Table
+ */
+
+// odd issue tracker-4 status-1 priority-3 priority-high4 created-by-me
+
+$priority-1-color: hsl(210, 80%, 50%); // Low priority-lowest
+$priority-2-color: black; // Normal priority-default
+$priority-3-color: hsl(30, 80%, 50%); // High priority-high4
+$priority-4-color: hsl(0, 80%, 50%); // Urgent
+$priority-5-color: hsl(0, 80%, 50%); // Immediate
+$priority-6-color: hsl(0, 80%, 50%); // Critical
