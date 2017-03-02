@@ -2,6 +2,10 @@
 
 jQuery(document).ready(function($){
 
+    var new_object = $('a#new-object');
+    new_object.text('');
+    new_object.append('<span>+</span>')
+
     // Wrap the list of sub-projects in a list
     var project_box = $('div.projects.box');
     project_box.append('<ul></ul>');

@@ -239,7 +239,7 @@ div #header {
 		    background-color: $main-menu-hover-colour;
                 }
             }
-            &.new-object {
+            &#new-object {
 		margin-right: $padding-large-horizontal;
 		width: 25px;
 		height: 25px;
@@ -254,6 +254,13 @@ div #header {
 		&:hover {
 		    background-color: $main-menu-hover-colour;
 		    color: $main-menu-colour;
+		}
+
+		span {
+		    font-size: 25pt;
+		    position: relative;
+		    top: -4px;
+		    left: 0px;
 		}
             }
         }
