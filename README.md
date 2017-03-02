@@ -38,6 +38,10 @@ Ongoing changes :
 
 * Redmine HTML code is prior to Bootstrap era and its semantic is not well defined. We can patch the DOM when it is mandatory, but it is a last resort.
 
+# What cannot be done
+
+* style issue status : *status-1* *status-2* ... classes are related to the Redmine instance setup, Redmine should implement a way to inject CSS from Administration, workaround is to patch at SASS or CSS level.
+
 # Redmine Links
 
 * [Redmine Theme List](http://www.redmine.org/projects/redmine/wiki/Theme_List)
