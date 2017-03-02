@@ -2203,6 +2203,10 @@
   clip: auto; }
 
 /**************************************************************************************************
+ * Boolean Choices
+ *
+ */
+/**************************************************************************************************
  * Colors
  * Gray and brand colors for use across Bootstrap.
  */
@@ -2853,7 +2857,7 @@ div #header {
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
         #main-menu li a.selected:hover {
           background-color: #ee2b4b; }
-      #main-menu li a.new-object {
+      #main-menu li a#new-object {
         margin-right: 16px;
         width: 25px;
         height: 25px;
@@ -2864,9 +2868,14 @@ div #header {
         vertical-align: middle;
         background-color: #f0425f;
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
-        #main-menu li a.new-object:hover {
+        #main-menu li a#new-object:hover {
           background-color: #ee2b4b;
           color: white; }
+        #main-menu li a#new-object span {
+          font-size: 25pt;
+          position: relative;
+          top: -4px;
+          left: 0px; }
   #main-menu .menu-children {
     display: none;
     position: absolute;
@@ -4790,7 +4799,7 @@ div.wiki {
   font-size: 16px;
   color: #222222; }
   div.wiki h1 {
-    font-size: 36px; }
+    font-size: 32px; }
   div.wiki h2 {
     font-size: 29px; }
   div.wiki h3 {
@@ -4798,14 +4807,16 @@ div.wiki {
   div.wiki h4 {
     font-size: 20px;
     border-bottom: none; }
+  div.wiki body {
+    counter-reset: h1 h2 h3 h4 h5 h6; }
   div.wiki h1 {
-    counter-reset: h2; }
+    counter-reset: h2 h3 h4 h5 h6; }
   div.wiki h2 {
-    counter-reset: h3; }
+    counter-reset: h3 h4 h5 h6; }
   div.wiki h3 {
-    counter-reset: h4; }
+    counter-reset: h4 h5 h6; }
   div.wiki h4 {
-    counter-reset: h5; }
+    counter-reset: h5 h6; }
   div.wiki h5 {
     counter-reset: h6; }
   div.wiki h2:before {
