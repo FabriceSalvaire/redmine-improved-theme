@@ -4,6 +4,8 @@ It supports Redmine v3.3.
 
 This work is licensed under [CC by-nc-na](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
 
+# Screenshots (can be older than head)
+
 ![Overview](https://github.com/FabriceSalvaire/redmine-improved-theme/raw/master/screenshots/redmine-project-overview.png)
 ![Roadmap](https://github.com/FabriceSalvaire/redmine-improved-theme/raw/master/screenshots/redmine-project-roadmap.png)
 ![Issues](https://github.com/FabriceSalvaire/redmine-improved-theme/raw/master/screenshots/redmine-project-issues.png)
@@ -68,3 +70,5 @@ Run the shell script *init.sh* to copy images and fonts.
 then run Gulp to generate the stylesheet:
 
     gulp
+
+Look at private/sass/redmine/_settings.scss to customize this theme.
