@@ -85,42 +85,44 @@ table.issue-report {
 }
 
 // Colourise priorities
-table.issues {
-    // @for $i from 1 through 6 {
-    //     tr.priority-#{$i} {
-    //     	td.priority {
-    //     	    color: $priority-#{$i}-color;
-    //     	}
-    //     }
-    // }
-    tr.priority-1 {
-        td.priority {
-            color: $priority-1-color;
-        }
-    }
-    tr.priority-2 {
-        td.priority {
-            color: $priority-2-color;
-        }
-    }
-    tr.priority-3 {
-        td.priority {
-            color: $priority-3-color;
-        }
-    }
-    tr.priority-4 {
-        td.priority {
-            color: $priority-4-color;
-        }
-    }
-    tr.priority-5 {
-        td.priority {
-            color: $priority-5-color;
-        }
-    }
-    tr.priority-6 {
-        td.priority {
-            color: $priority-6-color;
-        }
+@if $colorize-issue-priorities == true {
+    table.issues {
+	// @for $i from 1 through 6 {
+	//     tr.priority-#{$i} {
+	//     	td.priority {
+	//     	    color: $priority-#{$i}-color;
+	//     	}
+	//     }
+	// }
+	tr.priority-1 {
+            td.priority {
+		color: $priority-1-color;
+            }
+	}
+	tr.priority-2 {
+            td.priority {
+		color: $priority-2-color;
+            }
+	}
+	tr.priority-3 {
+            td.priority {
+		color: $priority-3-color;
+            }
+	}
+	tr.priority-4 {
+            td.priority {
+		color: $priority-4-color;
+            }
+	}
+	tr.priority-5 {
+            td.priority {
+		color: $priority-5-color;
+            }
+	}
+	tr.priority-6 {
+            td.priority {
+		color: $priority-6-color;
+            }
+	}
     }
 }
