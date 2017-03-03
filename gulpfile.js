@@ -14,7 +14,7 @@ var project_root = __dirname;
 var project_path = {
     bower: project_root + '/vendor',
     css: project_root + '/stylesheets',
-    sass: project_root + '/private/sass',
+    sass: project_root + '/src/sass',
 };
 
 var project_patterns = {

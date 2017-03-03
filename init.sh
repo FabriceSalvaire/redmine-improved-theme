@@ -9,4 +9,4 @@ for i in ../vendor/fontawesome/fonts/* ; do
 done
 popd
 
-cp -r vendor/fontawesome/scss/ private/sass/libs/fontawesome
+cp -r vendor/fontawesome/scss/ src/sass/libs/fontawesome

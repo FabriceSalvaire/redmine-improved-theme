@@ -75,4 +75,4 @@ then run Gulp to generate the stylesheet:
 
     gulp
 
-Look at private/sass/redmine/_settings.scss to customize this theme.
+Look at src/sass/redmine/_settings.scss to customize this theme.
