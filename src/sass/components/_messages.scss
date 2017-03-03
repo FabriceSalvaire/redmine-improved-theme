@@ -16,22 +16,22 @@ div.flash {
     margin-top: 8px;
 
     &.error {
-        // background: url(../images/exclamation.png) 8px 50% no-repeat;
+        // background: url(../../../images/exclamation.png) 8px 50% no-repeat;
 	@include alert-variant($alert-danger-bg, $alert-danger-border, $alert-danger-text);
     }
     &.notice {
-        // background: url(../images/true.png) 8px 5px no-repeat;
+        // background: url(../../../images/true.png) 8px 5px no-repeat;
 	@include alert-variant($alert-success-bg, $alert-success-border, $alert-success-text);
     }
     &.warning {
-        // background: url(../images/warning.png) 8px 5px no-repeat;
+        // background: url(../../../images/warning.png) 8px 5px no-repeat;
         // text-align: left;
 	@include alert-variant($alert-warning-bg, $alert-warning-border, $alert-warning-text);
     }
 }
 
 #errorExplanation {
-    background: url(../images/exclamation.png) 8px 50% no-repeat;
+    background: url(../../../images/exclamation.png) 8px 50% no-repeat;
     background-color: #ffe3e3;
     border-color: #dd0000;
     color: #880000;
@@ -44,7 +44,7 @@ div.flash {
 }
 
 .conflict {
-    background: url(../images/warning.png) 8px 5px no-repeat;
+    background: url(../../../images/warning.png) 8px 5px no-repeat;
     background-color: #FFEBC1;
     border-color: #FDBF3B;
     color: #A6750C;

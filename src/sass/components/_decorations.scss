@@ -30,46 +30,46 @@ dt {
 	width: 1em;
     }
     &.issue-edit {
-        background-image: url(../images/ticket_edit.png);
+        background-image: url(../../../images/ticket_edit.png);
     }
     &.issue-closed {
-        background-image: url(../images/ticket_checked.png);
+        background-image: url(../../../images/ticket_checked.png);
     }
     &.issue-note {
-        background-image: url(../images/ticket_note.png);
+        background-image: url(../../../images/ticket_note.png);
     }
     &.changeset {
-        background-image: url(../images/changeset.png);
+        background-image: url(../../../images/changeset.png);
     }
     &.news {
-        background-image: url(../images/news.png);
+        background-image: url(../../../images/news.png);
     }
     &.message {
-        background-image: url(../images/message.png);
+        background-image: url(../../../images/message.png);
     }
     &.reply {
-        background-image: url(../images/comments.png);
+        background-image: url(../../../images/comments.png);
     }
     &.wiki-page:before { // User Activity
 	@include fonteawesome-icon($fa-var-wikipedia-w);
 	width: 1em;
     }
     &.attachment {
-        background-image: url(../images/attachment.png);
+        background-image: url(../../../images/attachment.png);
     }
     &.document {
-        background-image: url(../images/document.png);
+        background-image: url(../../../images/document.png);
     }
     &.project {
-        background-image: url(../images/projects.png);
+        background-image: url(../../../images/projects.png);
     }
     &.time-entry {
-        background-image: url(../images/time.png);
+        background-image: url(../../../images/time.png);
     }
 }
 
 #search-results dt.issue.closed {
-    background-image: url(../images/ticket_checked.png);
+    background-image: url(../../../images/ticket_checked.png);
 }
 
 a.my-project:before {

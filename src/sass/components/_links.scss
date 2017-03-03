@@ -31,9 +31,9 @@ a {
     }
     &.collapsible {
         padding-left: 12px;
-        background: url(../images/arrow_expanded.png) no-repeat -3px 40%;
+        background: url(../../../images/arrow_expanded.png) no-repeat -3px 40%;
         &.collapsed {
-            background: url(../images/arrow_collapsed.png) no-repeat -5px 40%;
+            background: url(../../../images/arrow_collapsed.png) no-repeat -5px 40%;
         }
     }
     &#toggle-completed-versions {
@@ -42,7 +42,7 @@ a {
     &.toggle-checkboxes {
         margin-left: 5px;
         padding-left: 12px;
-        background: url(../images/toggle_check.png) no-repeat 0% 50%;
+        background: url(../../../images/toggle_check.png) no-repeat 0% 50%;
     }
 }
 

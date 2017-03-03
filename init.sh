@@ -1,7 +1,5 @@
 #! /bin/bash
 
-cp -r ../../images/ .
-
 mkdir fonts
 pushd fonts
 for i in ../vendor/fontawesome/fonts/* ; do

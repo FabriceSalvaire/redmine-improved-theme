@@ -69,7 +69,7 @@ input#time_entry_comments {
 
 #preview fieldset {
     margin-top: 1em;
-    background: url(../images/draft.png);
+    background: url(../../../images/draft.png);
 }
 
 .tabular.settings {
@@ -152,14 +152,14 @@ span.required {
         width: 250px;
         color: #555;
         background-color: inherit;
-        background: url(../images/attachment.png) no-repeat 1px 50%;
+        background: url(../../../images/attachment.png) no-repeat 1px 50%;
         padding-left: 18px;
     }
     .ajax-waiting input.filename {
-        background: url(../images/hourglass.png) no-repeat 0px 50%;
+        background: url(../../../images/hourglass.png) no-repeat 0px 50%;
     }
     .ajax-loading input.filename {
-        background: url(../images/loading.gif) no-repeat 0px 50%;
+        background: url(../../../images/loading.gif) no-repeat 0px 50%;
     }
     div.ui-progressbar {
         width: 100px;
@@ -170,7 +170,7 @@ span.required {
 }
 
 a.remove-upload {
-    background: url(../images/delete.png) no-repeat 1px 50%;
+    background: url(../../../images/delete.png) no-repeat 1px 50%;
     width: 1px;
     display: inline-block;
     padding-left: 16px;
@@ -227,7 +227,7 @@ p.other-formats {
 // }
 
 a.atom {
-    background: url(../images/feed.png) no-repeat 1px 50%;
+    background: url(../../../images/feed.png) no-repeat 1px 50%;
     padding: 2px 0px 3px 16px;
 }
 
@@ -238,7 +238,7 @@ em.info {
     display: block;
     &.error {
         padding-left: 20px;
-        background: url(../images/exclamation.png) no-repeat 0 50%;
+        background: url(../../../images/exclamation.png) no-repeat 0 50%;
     }
 }
 
@@ -297,7 +297,7 @@ table.members td {
         padding-left: 20px;
     }
     &.group, &.groupnonmember, &.groupanonymous {
-        background: url(../images/group.png) no-repeat 0% 1px;
+        background: url(../../../images/group.png) no-repeat 0% 1px;
     }
 }
 
@@ -313,13 +313,13 @@ input {
 }
 
 input.autocomplete {
-    background: #fff url(../images/magnifier.png) no-repeat 2px 50%;
+    background: #fff url(../../../images/magnifier.png) no-repeat 2px 50%;
     padding-left: 20px !important;
     border: 1px solid #9EB1C2;
     border-radius: 2px;
     height: 1.5em;
     &.ajax-loading {
-        background-image: url(../images/loading.gif);
+        background-image: url(../../../images/loading.gif);
     }
 }
 

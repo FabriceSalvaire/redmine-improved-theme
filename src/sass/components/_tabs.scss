@@ -85,12 +85,12 @@ button {
     }
     &.tab-left {
         right: 20px;
-        background: #eeeeee url(../images/bullet_arrow_left.png) no-repeat 50% 50%;
+        background: #eeeeee url(../../../images/bullet_arrow_left.png) no-repeat 50% 50%;
         border-top-left-radius: 3px;
     }
     &.tab-right {
         right: 0;
-        background: #eeeeee url(../images/bullet_arrow_right.png) no-repeat 50% 50%;
+        background: #eeeeee url(../../../images/bullet_arrow_right.png) no-repeat 50% 50%;
         border-top-right-radius: 3px;
     }
     &.tab-left.disabled, &.tab-right.disabled {

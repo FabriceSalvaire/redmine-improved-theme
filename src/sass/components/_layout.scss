@@ -320,43 +320,43 @@ div #header {
         padding-top: 2px;
         padding-bottom: 3px;
         &.projects {
-            background-image: url(../images/projects.png);
+            background-image: url(../../../images/projects.png);
         }
         &.users {
-            background-image: url(../images/user.png);
+            background-image: url(../../../images/user.png);
         }
         &.groups {
-            background-image: url(../images/group.png);
+            background-image: url(../../../images/group.png);
         }
         &.roles {
-            background-image: url(../images/database_key.png);
+            background-image: url(../../../images/database_key.png);
         }
         &.trackers {
-            background-image: url(../images/ticket.png);
+            background-image: url(../../../images/ticket.png);
         }
         &.issue_statuses {
-            background-image: url(../images/ticket_edit.png);
+            background-image: url(../../../images/ticket_edit.png);
         }
         &.workflows {
-            background-image: url(../images/ticket_go.png);
+            background-image: url(../../../images/ticket_go.png);
         }
         &.custom_fields {
-            background-image: url(../images/textfield.png);
+            background-image: url(../../../images/textfield.png);
         }
         &.enumerations {
-            background-image: url(../images/text_list_bullets.png);
+            background-image: url(../../../images/text_list_bullets.png);
         }
         &.settings {
-            background-image: url(../images/changeset.png);
+            background-image: url(../../../images/changeset.png);
         }
         &.plugins {
-            background-image: url(../images/plugin.png);
+            background-image: url(../../../images/plugin.png);
         }
         &.info {
-            background-image: url(../images/help.png);
+            background-image: url(../../../images/help.png);
         }
         &.server_authentication {
-            background-image: url(../images/server_key.png);
+            background-image: url(../../../images/server_key.png);
         }
     }
 }
@@ -520,7 +520,7 @@ div.modal {
 }
 
 input#openid_url {
-    background: url(../images/openid-bg.gif) no-repeat;
+    background: url(../../../images/openid-bg.gif) no-repeat;
     background-color: #fff;
     background-position: 0 50%;
     padding-left: 18px;

@@ -2923,31 +2923,31 @@ div #header {
   padding-top: 2px;
   padding-bottom: 3px; }
   #admin-menu a.projects {
-    background-image: url(../images/projects.png); }
+    background-image: url(../../../images/projects.png); }
   #admin-menu a.users {
-    background-image: url(../images/user.png); }
+    background-image: url(../../../images/user.png); }
   #admin-menu a.groups {
-    background-image: url(../images/group.png); }
+    background-image: url(../../../images/group.png); }
   #admin-menu a.roles {
-    background-image: url(../images/database_key.png); }
+    background-image: url(../../../images/database_key.png); }
   #admin-menu a.trackers {
-    background-image: url(../images/ticket.png); }
+    background-image: url(../../../images/ticket.png); }
   #admin-menu a.issue_statuses {
-    background-image: url(../images/ticket_edit.png); }
+    background-image: url(../../../images/ticket_edit.png); }
   #admin-menu a.workflows {
-    background-image: url(../images/ticket_go.png); }
+    background-image: url(../../../images/ticket_go.png); }
   #admin-menu a.custom_fields {
-    background-image: url(../images/textfield.png); }
+    background-image: url(../../../images/textfield.png); }
   #admin-menu a.enumerations {
-    background-image: url(../images/text_list_bullets.png); }
+    background-image: url(../../../images/text_list_bullets.png); }
   #admin-menu a.settings {
-    background-image: url(../images/changeset.png); }
+    background-image: url(../../../images/changeset.png); }
   #admin-menu a.plugins {
-    background-image: url(../images/plugin.png); }
+    background-image: url(../../../images/plugin.png); }
   #admin-menu a.info {
-    background-image: url(../images/help.png); }
+    background-image: url(../../../images/help.png); }
   #admin-menu a.server_authentication {
-    background-image: url(../images/server_key.png); }
+    background-image: url(../../../images/server_key.png); }
 
 /*******************************************************************************
  *
@@ -3057,7 +3057,7 @@ div.modal {
     margin: 0.3em 0; }
 
 input#openid_url {
-  background: url(../images/openid-bg.gif) no-repeat;
+  background: url(../../../images/openid-bg.gif) no-repeat;
   background-color: #fff;
   background-position: 0 50%;
   padding-left: 18px; }
@@ -3099,9 +3099,9 @@ a.user.locked {
 
 a.collapsible {
   padding-left: 12px;
-  background: url(../images/arrow_expanded.png) no-repeat -3px 40%; }
+  background: url(../../../images/arrow_expanded.png) no-repeat -3px 40%; }
   a.collapsible.collapsed {
-    background: url(../images/arrow_collapsed.png) no-repeat -5px 40%; }
+    background: url(../../../images/arrow_collapsed.png) no-repeat -5px 40%; }
 
 a#toggle-completed-versions {
   color: #999; }
@@ -3109,7 +3109,7 @@ a#toggle-completed-versions {
 a.toggle-checkboxes {
   margin-left: 5px;
   padding-left: 12px;
-  background: url(../images/toggle_check.png) no-repeat 0% 50%; }
+  background: url(../../../images/toggle_check.png) no-repeat 0% 50%; }
 
 #sidebar a.selected {
   line-height: 1.7em;
@@ -3223,7 +3223,7 @@ tr.project.closed, tr.project.archived, tr.project.closed a, tr.project.archived
   color: #aaa; }
 
 tr.project.idnt td.name span {
-  background: url(../images/bullet_arrow_right.png) no-repeat 0 50%;
+  background: url(../../../images/bullet_arrow_right.png) no-repeat 0 50%;
   padding-left: 16px; }
 
 tr.project.idnt-1 td.name {
@@ -3277,13 +3277,13 @@ tr.entry {
     margin-left: 16px; }
 
 tr span.expander {
-  background-image: url(../images/bullet_toggle_plus.png);
+  background-image: url(../../../images/bullet_toggle_plus.png);
   padding-left: 8px;
   margin-left: 0;
   cursor: pointer; }
 
 tr.open span.expander {
-  background-image: url(../images/bullet_toggle_minus.png); }
+  background-image: url(../../../images/bullet_toggle_minus.png); }
 
 tr.changeset {
   height: 20px; }
@@ -3323,9 +3323,9 @@ tr.message {
     font-size: 80%;
     white-space: nowrap; }
   tr.message.locked td.subject {
-    background: url(../images/locked.png) no-repeat 0 1px; }
+    background: url(../../../images/locked.png) no-repeat 0 1px; }
   tr.message.sticky td.subject {
-    background: url(../images/bullet_go.png) no-repeat 0 1px;
+    background: url(../../../images/bullet_go.png) no-repeat 0 1px;
     font-weight: bold; }
 
 tr.version.closed {
@@ -3337,7 +3337,7 @@ tr.version td.name {
   padding-left: 20px; }
 
 tr.version.shared td.name {
-  background: url(../images/link.png) no-repeat 0% 70%; }
+  background: url(../../../images/link.png) no-repeat 0% 70%; }
 
 tr.version td.date, tr.version td.status, tr.version td.sharing {
   text-align: center;
@@ -3454,12 +3454,12 @@ a.sort {
   background-position: 100% 50%;
   background-repeat: no-repeat; }
   a.sort.asc {
-    background-image: url(../images/sort_asc.png); }
+    background-image: url(../../../images/sort_asc.png); }
   a.sort.desc {
-    background-image: url(../images/sort_desc.png); }
+    background-image: url(../../../images/sort_desc.png); }
 
 table.boards a.board, h3.comments {
-  background: url(../images/comment.png) no-repeat 0% 50%;
+  background: url(../../../images/comment.png) no-repeat 0% 50%;
   padding-left: 20px; }
 
 table.boards td.last-message {
@@ -3526,7 +3526,7 @@ table.issues td.description {
     white-space: normal; }
 
 tr.issue.idnt td.subject {
-  background: url(../images/bullet_arrow_right.png) no-repeat 0 50%; }
+  background: url(../../../images/bullet_arrow_right.png) no-repeat 0 50%; }
 
 tr.issue.idnt-1 td.subject {
   padding-left: 24px;
@@ -3618,7 +3618,7 @@ span.add_attachment {
 
 span.search_for_watchers a, span.add_attachment a {
   padding-left: 16px;
-  background: url(../images/bullet_add.png) no-repeat 0 50%; }
+  background: url(../../../images/bullet_add.png) no-repeat 0 50%; }
 
 .highlight {
   background-color: #FCFD8D; }
@@ -3766,10 +3766,10 @@ fieldset.collapsible {
   border-width: 1px 0 0 0; }
   fieldset.collapsible > legend {
     padding-left: 16px;
-    background: url(../images/arrow_expanded.png) no-repeat 0% 40%;
+    background: url(../../../images/arrow_expanded.png) no-repeat 0% 40%;
     cursor: pointer; }
   fieldset.collapsible.collapsed > legend {
-    background-image: url(../images/arrow_collapsed.png); }
+    background-image: url(../../../images/arrow_collapsed.png); }
 
 fieldset#date-range p {
   margin: 2px 0 2px 0; }
@@ -3813,7 +3813,7 @@ fieldset#filters td.values {
   margin-right: 1em; }
 
 .toggle-multiselect {
-  background: url(../images/bullet_toggle_plus.png) no-repeat 0% 40%;
+  background: url(../../../images/bullet_toggle_plus.png) no-repeat 0% 40%;
   padding-left: 16px;
   margin-left: 0;
   margin-right: 5px;
@@ -4205,7 +4205,7 @@ input#time_entry_comments {
 
 #preview fieldset {
   margin-top: 1em;
-  background: url(../images/draft.png); }
+  background: url(../../../images/draft.png); }
 
 .tabular.settings p {
   padding-left: 300px; }
@@ -4271,14 +4271,14 @@ span.required {
   width: 250px;
   color: #555;
   background-color: inherit;
-  background: url(../images/attachment.png) no-repeat 1px 50%;
+  background: url(../../../images/attachment.png) no-repeat 1px 50%;
   padding-left: 18px; }
 
 #attachments_fields .ajax-waiting input.filename {
-  background: url(../images/hourglass.png) no-repeat 0px 50%; }
+  background: url(../../../images/hourglass.png) no-repeat 0px 50%; }
 
 #attachments_fields .ajax-loading input.filename {
-  background: url(../images/loading.gif) no-repeat 0px 50%; }
+  background: url(../../../images/loading.gif) no-repeat 0px 50%; }
 
 #attachments_fields div.ui-progressbar {
   width: 100px;
@@ -4287,7 +4287,7 @@ span.required {
   display: inline-block; }
 
 a.remove-upload {
-  background: url(../images/delete.png) no-repeat 1px 50%;
+  background: url(../../../images/delete.png) no-repeat 1px 50%;
   width: 1px;
   display: inline-block;
   padding-left: 16px; }
@@ -4327,7 +4327,7 @@ p.other-formats {
   color: #666; }
 
 a.atom {
-  background: url(../images/feed.png) no-repeat 1px 50%;
+  background: url(../../../images/feed.png) no-repeat 1px 50%;
   padding: 2px 0px 3px 16px; }
 
 em.info {
@@ -4337,7 +4337,7 @@ em.info {
   display: block; }
   em.info.error {
     padding-left: 20px;
-    background: url(../images/exclamation.png) no-repeat 0 50%; }
+    background: url(../../../images/exclamation.png) no-repeat 0 50%; }
 
 textarea.text_cf {
   width: 95%;
@@ -4380,7 +4380,7 @@ table.members td.name {
   padding-left: 20px; }
 
 table.members td.group, table.members td.groupnonmember, table.members td.groupanonymous {
-  background: url(../images/group.png) no-repeat 0% 1px; }
+  background: url(../../../images/group.png) no-repeat 0% 1px; }
 
 input#principal_search, input#user_search {
   width: 90%; }
@@ -4390,13 +4390,13 @@ input#principal_search, input#user_search {
   width: 210px; }
 
 input.autocomplete {
-  background: #fff url(../images/magnifier.png) no-repeat 2px 50%;
+  background: #fff url(../../../images/magnifier.png) no-repeat 2px 50%;
   padding-left: 20px !important;
   border: 1px solid #9EB1C2;
   border-radius: 2px;
   height: 1.5em; }
   input.autocomplete.ajax-loading {
-    background-image: url(../images/loading.gif); }
+    background-image: url(../../../images/loading.gif); }
 
 .role-visibility {
   padding-left: 2em; }
@@ -4447,7 +4447,7 @@ div.flash {
     color: #8a6d3b; }
 
 #errorExplanation {
-  background: url(../images/exclamation.png) 8px 50% no-repeat;
+  background: url(../../../images/exclamation.png) 8px 50% no-repeat;
   background-color: #ffe3e3;
   border-color: #dd0000;
   color: #880000; }
@@ -4457,7 +4457,7 @@ div.flash {
     display: none; }
 
 .conflict {
-  background: url(../images/warning.png) 8px 5px no-repeat;
+  background: url(../../../images/warning.png) 8px 5px no-repeat;
   background-color: #FFEBC1;
   border-color: #FDBF3B;
   color: #A6750C;
@@ -4492,7 +4492,7 @@ div.flash {
   #ajax-indicator span {
     background-position: 0% 40%;
     background-repeat: no-repeat;
-    background-image: url(../images/loading.gif);
+    background-image: url(../../../images/loading.gif);
     padding-left: 26px;
     vertical-align: bottom; }
 
@@ -4745,12 +4745,12 @@ button.tab-left:focus, button.tab-right:focus {
 
 button.tab-left {
   right: 20px;
-  background: #eeeeee url(../images/bullet_arrow_left.png) no-repeat 50% 50%;
+  background: #eeeeee url(../../../images/bullet_arrow_left.png) no-repeat 50% 50%;
   border-top-left-radius: 3px; }
 
 button.tab-right {
   right: 0;
-  background: #eeeeee url(../images/bullet_arrow_right.png) no-repeat 50% 50%;
+  background: #eeeeee url(../../../images/bullet_arrow_right.png) no-repeat 50% 50%;
   border-top-right-radius: 3px; }
 
 button.tab-left.disabled, button.tab-right.disabled {
@@ -4936,9 +4936,9 @@ a.close-icon {
   height: 12px;
   background-repeat: no-repeat;
   cursor: pointer;
-  background-image: url("../images/close.png"); }
+  background-image: url("../../../images/close.png"); }
   a.close-icon:hover {
-    background-image: url("../images/close_hl.png"); }
+    background-image: url("../../../images/close_hl.png"); }
 
 /***************************************************************************************************
  *
@@ -4982,15 +4982,15 @@ a.close-icon {
       font-weight: bold; }
 
 .task_late {
-  background: #f66 url(../images/task_late.png);
+  background: #f66 url(../../../images/task_late.png);
   border: 1px solid #f66; }
 
 .task_done {
-  background: #00c600 url(../images/task_done.png);
+  background: #00c600 url(../../../images/task_done.png);
   border: 1px solid #00c600; }
 
 .task_todo {
-  background: #aaa url(../images/task_todo.png);
+  background: #aaa url(../../../images/task_todo.png);
   border: 1px solid #aaa; }
   .task_todo.parent {
     background: #888;
@@ -5003,7 +5003,7 @@ a.close-icon {
 
 .task.parent.marker.starting {
   position: absolute;
-  background: url(../images/task_parent_end.png) no-repeat 0 0;
+  background: url(../../../images/task_parent_end.png) no-repeat 0 0;
   width: 8px;
   height: 16px;
   margin-left: -4px;
@@ -5012,7 +5012,7 @@ a.close-icon {
 
 .task.parent.marker.ending {
   position: absolute;
-  background: url(../images/task_parent_end.png) no-repeat 0 0;
+  background: url(../../../images/task_parent_end.png) no-repeat 0 0;
   width: 8px;
   height: 16px;
   margin-left: -4px;
@@ -5020,50 +5020,50 @@ a.close-icon {
   top: -1px; }
 
 .version.task_late {
-  background: #f66 url(../images/milestone_late.png);
+  background: #f66 url(../../../images/milestone_late.png);
   border: 1px solid #f66;
   height: 2px;
   margin-top: 3px; }
 
 .version.task_done {
-  background: #00c600 url(../images/milestone_done.png);
+  background: #00c600 url(../../../images/milestone_done.png);
   border: 1px solid #00c600;
   height: 2px;
   margin-top: 3px; }
 
 .version.task_todo {
-  background: #fff url(../images/milestone_todo.png);
+  background: #fff url(../../../images/milestone_todo.png);
   border: 1px solid #fff;
   height: 2px;
   margin-top: 3px; }
 
 .version.marker {
-  background-image: url(../images/version_marker.png);
+  background-image: url(../../../images/version_marker.png);
   background-repeat: no-repeat;
   border: 0;
   margin-left: -4px;
   margin-top: 1px; }
 
 .project.task_late {
-  background: #f66 url(../images/milestone_late.png);
+  background: #f66 url(../../../images/milestone_late.png);
   border: 1px solid #f66;
   height: 2px;
   margin-top: 3px; }
 
 .project.task_done {
-  background: #00c600 url(../images/milestone_done.png);
+  background: #00c600 url(../../../images/milestone_done.png);
   border: 1px solid #00c600;
   height: 2px;
   margin-top: 3px; }
 
 .project.task_todo {
-  background: #fff url(../images/milestone_todo.png);
+  background: #fff url(../../../images/milestone_todo.png);
   border: 1px solid #fff;
   height: 2px;
   margin-top: 3px; }
 
 .project.marker {
-  background-image: url(../images/project_marker.png);
+  background-image: url(../../../images/project_marker.png);
   background-repeat: no-repeat;
   border: 0;
   margin-left: -4px;
@@ -5133,7 +5133,7 @@ a.icon-copy:before {
   content: ""; }
 
 .icon-duplicate {
-  background-image: url(../images/duplicate.png); }
+  background-image: url(../../../images/duplicate.png); }
 
 a.icon-del:before {
   display: inline-block;
@@ -5166,22 +5166,22 @@ a.icon-save:before {
   content: ""; }
 
 .icon-cancel {
-  background-image: url(../images/cancel.png); }
+  background-image: url(../../../images/cancel.png); }
 
 .icon-multiple {
-  background-image: url(../images/table_multiple.png); }
+  background-image: url(../../../images/table_multiple.png); }
 
 .icon-folder {
-  background-image: url(../images/folder.png); }
+  background-image: url(../../../images/folder.png); }
 
 .open .icon-folder {
-  background-image: url(../images/folder_open.png); }
+  background-image: url(../../../images/folder_open.png); }
 
 .icon-package {
-  background-image: url(../images/package.png); }
+  background-image: url(../../../images/package.png); }
 
 .icon-user {
-  background-image: url(../images/user.png); }
+  background-image: url(../../../images/user.png); }
 
 span.icon-projects:before {
   display: inline-block;
@@ -5194,10 +5194,10 @@ span.icon-projects:before {
   content: ""; }
 
 .icon-help {
-  background-image: url(../images/help.png); }
+  background-image: url(../../../images/help.png); }
 
 .icon-attachment {
-  background-image: url(../images/attachment.png); }
+  background-image: url(../../../images/attachment.png); }
 
 a.icon-history:before {
   display: inline-block;
@@ -5233,13 +5233,13 @@ a.icon-time-add:before {
   content: ""; }
 
 .icon-stats {
-  background-image: url(../images/stats.png); }
+  background-image: url(../../../images/stats.png); }
 
 .icon-warning {
-  background-image: url(../images/warning.png); }
+  background-image: url(../../../images/warning.png); }
 
 .icon-error {
-  background-image: url(../images/exclamation.png); }
+  background-image: url(../../../images/exclamation.png); }
 
 a.icon-fav:before {
   display: inline-block;
@@ -5302,10 +5302,10 @@ a.icon-checked:before {
   content: ""; }
 
 .icon-details {
-  background-image: url(../images/zoom_in.png); }
+  background-image: url(../../../images/zoom_in.png); }
 
 .icon-report {
-  background-image: url(../images/report.png); }
+  background-image: url(../../../images/report.png); }
 
 a.icon-comment:before {
   display: inline-block;
@@ -5318,10 +5318,10 @@ a.icon-comment:before {
   content: ""; }
 
 .icon-summary {
-  background-image: url(../images/lightning.png); }
+  background-image: url(../../../images/lightning.png); }
 
 .icon-server-authentication {
-  background-image: url(../images/server_key.png); }
+  background-image: url(../../../images/server_key.png); }
 
 span.icon-issue:before {
   display: inline-block;
@@ -5354,75 +5354,75 @@ a.icon-zoom-out:before {
   content: ""; }
 
 .icon-magnifier {
-  background-image: url(../images/magnifier.png); }
+  background-image: url(../../../images/magnifier.png); }
 
 .icon-passwd {
-  background-image: url(../images/textfield_key.png); }
+  background-image: url(../../../images/textfield_key.png); }
 
 .icon-test {
-  background-image: url(../images/bullet_go.png); }
+  background-image: url(../../../images/bullet_go.png); }
 
 .icon-email {
-  background-image: url(../images/email.png); }
+  background-image: url(../../../images/email.png); }
 
 .icon-email-disabled {
-  background-image: url(../images/email_disabled.png); }
+  background-image: url(../../../images/email_disabled.png); }
 
 .icon-email-add {
-  background-image: url(../images/email_add.png); }
+  background-image: url(../../../images/email_add.png); }
 
 .icon-move-up {
-  background-image: url(../images/1uparrow.png); }
+  background-image: url(../../../images/1uparrow.png); }
 
 .icon-move-top {
-  background-image: url(../images/2uparrow.png); }
+  background-image: url(../../../images/2uparrow.png); }
 
 .icon-move-down {
-  background-image: url(../images/1downarrow.png); }
+  background-image: url(../../../images/1downarrow.png); }
 
 .icon-move-bottom {
-  background-image: url(../images/2downarrow.png); }
+  background-image: url(../../../images/2downarrow.png); }
 
 .icon-ok {
-  background-image: url(../images/true.png); }
+  background-image: url(../../../images/true.png); }
 
 .icon-not-ok {
-  background-image: url(../images/false.png); }
+  background-image: url(../../../images/false.png); }
 
 .icon-link-break {
-  background-image: url(../images/link_break.png); }
+  background-image: url(../../../images/link_break.png); }
 
 .icon-list {
-  background-image: url(../images/text_list_bullets.png); }
+  background-image: url(../../../images/text_list_bullets.png); }
 
 .icon-file {
-  background-image: url(../images/files/default.png); }
+  background-image: url(../../../images/files/default.png); }
   .icon-file.text-plain {
-    background-image: url(../images/files/text.png); }
+    background-image: url(../../../images/files/text.png); }
   .icon-file.text-x-c {
-    background-image: url(../images/files/c.png); }
+    background-image: url(../../../images/files/c.png); }
   .icon-file.text-x-csharp {
-    background-image: url(../images/files/csharp.png); }
+    background-image: url(../../../images/files/csharp.png); }
   .icon-file.text-x-java {
-    background-image: url(../images/files/java.png); }
+    background-image: url(../../../images/files/java.png); }
   .icon-file.text-x-javascript {
-    background-image: url(../images/files/js.png); }
+    background-image: url(../../../images/files/js.png); }
   .icon-file.text-x-php {
-    background-image: url(../images/files/php.png); }
+    background-image: url(../../../images/files/php.png); }
   .icon-file.text-x-ruby {
-    background-image: url(../images/files/ruby.png); }
+    background-image: url(../../../images/files/ruby.png); }
   .icon-file.text-xml {
-    background-image: url(../images/files/xml.png); }
+    background-image: url(../../../images/files/xml.png); }
   .icon-file.text-css {
-    background-image: url(../images/files/css.png); }
+    background-image: url(../../../images/files/css.png); }
   .icon-file.text-html {
-    background-image: url(../images/files/html.png); }
+    background-image: url(../../../images/files/html.png); }
   .icon-file.image-gif, .icon-file.image-jpeg, .icon-file.image-png, .icon-file.image-tiff {
-    background-image: url(../images/files/image.png); }
+    background-image: url(../../../images/files/image.png); }
   .icon-file.application-pdf {
-    background-image: url(../images/files/pdf.png); }
+    background-image: url(../../../images/files/pdf.png); }
   .icon-file.application-zip, .icon-file.application-x-gzip {
-    background-image: url(../images/files/zip.png); }
+    background-image: url(../../../images/files/zip.png); }
 
 /*******************************************************************************
  *
@@ -5432,10 +5432,10 @@ a.icon-zoom-out:before {
 .sort-handle {
   width: 16px;
   height: 16px;
-  background: url(../images/reorder.png) no-repeat 0 50%;
+  background: url(../../../images/reorder.png) no-repeat 0 50%;
   cursor: move; }
   .sort-handle.ajax-loading {
-    background-image: url(../images/loading.gif); }
+    background-image: url(../../../images/loading.gif); }
 
 tr.ui-sortable-helper {
   border: 1px solid #e4e4e4; }
@@ -5925,25 +5925,25 @@ dt.issue:before {
   width: 1em; }
 
 dt.issue-edit {
-  background-image: url(../images/ticket_edit.png); }
+  background-image: url(../../../images/ticket_edit.png); }
 
 dt.issue-closed {
-  background-image: url(../images/ticket_checked.png); }
+  background-image: url(../../../images/ticket_checked.png); }
 
 dt.issue-note {
-  background-image: url(../images/ticket_note.png); }
+  background-image: url(../../../images/ticket_note.png); }
 
 dt.changeset {
-  background-image: url(../images/changeset.png); }
+  background-image: url(../../../images/changeset.png); }
 
 dt.news {
-  background-image: url(../images/news.png); }
+  background-image: url(../../../images/news.png); }
 
 dt.message {
-  background-image: url(../images/message.png); }
+  background-image: url(../../../images/message.png); }
 
 dt.reply {
-  background-image: url(../images/comments.png); }
+  background-image: url(../../../images/comments.png); }
 
 dt.wiki-page:before {
   display: inline-block;
@@ -5957,19 +5957,19 @@ dt.wiki-page:before {
   width: 1em; }
 
 dt.attachment {
-  background-image: url(../images/attachment.png); }
+  background-image: url(../../../images/attachment.png); }
 
 dt.document {
-  background-image: url(../images/document.png); }
+  background-image: url(../../../images/document.png); }
 
 dt.project {
-  background-image: url(../images/projects.png); }
+  background-image: url(../../../images/projects.png); }
 
 dt.time-entry {
-  background-image: url(../images/time.png); }
+  background-image: url(../../../images/time.png); }
 
 #search-results dt.issue.closed {
-  background-image: url(../images/ticket_checked.png); }
+  background-image: url(../../../images/ticket_checked.png); }
 
 a.my-project:before {
   display: inline-block;

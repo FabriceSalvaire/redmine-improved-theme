@@ -37,7 +37,7 @@ span {
     }
     &.search_for_watchers a, &.add_attachment a {
         padding-left: 16px;
-        background: url(../images/bullet_add.png) no-repeat 0 50%;
+        background: url(../../../images/bullet_add.png) no-repeat 0 50%;
     }
 }
 
@@ -222,11 +222,11 @@ fieldset {
         border-width: 1px 0 0 0;
         > legend {
             padding-left: 16px;
-            background: url(../images/arrow_expanded.png) no-repeat 0% 40%;
+            background: url(../../../images/arrow_expanded.png) no-repeat 0% 40%;
             cursor: pointer;
         }
         &.collapsed > legend {
-            background-image: url(../images/arrow_collapsed.png);
+            background-image: url(../../../images/arrow_collapsed.png);
         }
     }
     &#date-range p {
@@ -284,7 +284,7 @@ fieldset {
 }
 
 .toggle-multiselect {
-    background: url(../images/bullet_toggle_plus.png) no-repeat 0% 40%;
+    background: url(../../../images/bullet_toggle_plus.png) no-repeat 0% 40%;
     padding-left: 16px;
     margin-left: 0;
     margin-right: 5px;
