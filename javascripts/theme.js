@@ -1,7 +1,12 @@
 /* Theme functions */
 
+// Fixme: better ???
+var pathname = window.location.pathname;
+var parent_pathname = pathname.slice(0, pathname.lastIndexOf("\/"));
+
 jQuery(document).ready(function($){
 
+    // Move + of new-object into a span element
     var new_object = $('a#new-object');
     new_object.text('');
     new_object.append('<span>+</span>')
@@ -41,6 +46,25 @@ jQuery(document).ready(function($){
     }).text(function (index, text) {
 	return text.slice(0, -1);
     }).append('<i class="fa fa-chevron-right" aria-hidden="true"></i>');
+
+    // Implement a tab for wiki form/preview
+    var wiki_form = $('form#wiki_form');
+    var preview = $('div#preview');
+    if (wiki_form) {
+	wiki_form.before('\
+<div class="tabs">\
+  <ul>\
+    <li><a id="tab-wiki_form" class="selected" onclick="showTab(\'wiki_form\', this.href); this.blur(); return false;" href="">Edit</a></li>\
+    <li><a id="tab-preview" class="" onclick="showTab(\'preview\', this.href); this.blur(); submitPreview(parent_pathname + \'/preview\', \'wiki_form\', \'preview\'); return false;" href="">Preview</a></li>\
+  </ul>\
+</div>\
+<div id="tab-content-wiki_form" class="tab-content"></div>\
+<div id="tab-content-preview" class="tab-content"></div>\
+');
+	wiki_form.detach().appendTo('div#tab-content-wiki_form');
+	preview.detach().appendTo('div#tab-content-preview');
+	$('a.button[accesskey=r]').detach();
+    }
 
     // Fixme: fix for «
     // var links = $('div.issue div.next-prev-links');
