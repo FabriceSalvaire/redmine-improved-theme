@@ -1,4 +1,4 @@
-This repository contains a SASS based [Redmine](http://www.redmine.org) theme forked from the vanilla default Redmine theme (public/stylesheets/application.css).
+This repository contains a SASS based [Redmine](http://www.redmine.org) theme forked from the vanilla theme (public/stylesheets/application.css).
 
 It supports Redmine v3.3.
 
@@ -11,6 +11,11 @@ This work is licensed under [CC by-nc-na](https://creativecommons.org/licenses/b
 ![Issues](https://github.com/FabriceSalvaire/redmine-improved-theme/raw/master/screenshots/redmine-project-issues.png)
 ![Issue](https://github.com/FabriceSalvaire/redmine-improved-theme/raw/master/screenshots/redmine-project-issue.png)
 ![Wiki](https://github.com/FabriceSalvaire/redmine-improved-theme/raw/master/screenshots/redmine-project-wiki.png)
+
+# Features
+
+* Project overview : show sub-projects as a vertical list
+* Wiki : use tabs for wiki edit form and preview, similar to github
 
 # Changes from the original
 
