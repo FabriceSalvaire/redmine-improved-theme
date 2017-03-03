@@ -13,4 +13,9 @@
 // importing frameworks
 @import "libs/all";
 
-@import "redmine/all";
+@import "_settings";
+@import "_mixins";
+
+@import "_reset";
+
+@import "components/all";

@@ -4326,9 +4326,6 @@ p.other-formats {
   font-size: 0.9em;
   color: #666; }
 
-.other-formats span + span:before {
-  content: "| "; }
-
 a.atom {
   background: url(../images/feed.png) no-repeat 1px 50%;
   padding: 2px 0px 3px 16px; }

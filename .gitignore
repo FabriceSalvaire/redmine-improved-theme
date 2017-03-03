@@ -8,5 +8,5 @@ vendor
 
 # stylesheets
 TODO.txt
-src/sass/redmine/notes/
-src/sass/redmine/trash/
+notes/
+trash/

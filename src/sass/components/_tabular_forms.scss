@@ -221,9 +221,10 @@ p.other-formats {
     color: #666;
 }
 
-.other-formats span + span:before {
-    content: "| ";
-}
+// To layout Atom | Csv | PDF
+// .other-formats span + span:before {
+//     content: "| ";
+// }
 
 a.atom {
     background: url(../images/feed.png) no-repeat 1px 50%;
