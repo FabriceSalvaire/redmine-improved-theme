@@ -226,3 +226,16 @@ h3:hover a.wiki-anchor {
     display: inline;
     color: #ddd;
 }
+
+// Wiki preview
+div.wiki#preview {
+    fieldset.preview {
+	background: none;
+	border: none;
+	background-color: lighten($gray-base, 95%); // $gray-lighter
+	border-left: 3px solid red;
+	legend {
+	    display: none;
+	}
+    }
+}
