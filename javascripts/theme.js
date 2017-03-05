@@ -1,8 +1,13 @@
 /* Theme functions */
 
-// Fixme: better ???
-var pathname = window.location.pathname;
-var parent_pathname = pathname.slice(0, pathname.lastIndexOf("\/"));
+function get_path_for_wiki_edit() {
+    var pathname = window.location.pathname;
+    console.log('get_path_for_wiki_edit', pathname)
+    if (pathname.endsWith('/edit')) {
+	return pathname.slice(0, pathname.lastIndexOf("\/"));
+    } else
+	return pathname;
+}
 
 jQuery(document).ready(function($){
 
@@ -55,7 +60,7 @@ jQuery(document).ready(function($){
 <div class="tabs">\
   <ul>\
     <li><a id="tab-wiki_form" class="selected" onclick="showTab(\'wiki_form\', this.href); this.blur(); return false;" href="">Edit</a></li>\
-    <li><a id="tab-preview" class="" onclick="showTab(\'preview\', this.href); this.blur(); submitPreview(parent_pathname + \'/preview\', \'wiki_form\', \'preview\'); return false;" href="">Preview</a></li>\
+    <li><a id="tab-preview" class="" onclick="showTab(\'preview\', this.href); this.blur(); submitPreview(get_path_for_wiki_edit() + \'/preview\', \'wiki_form\', \'preview\'); return false;" href="">Preview</a></li>\
   </ul>\
 </div>\
 <div id="tab-content-wiki_form" class="tab-content"></div>\
