@@ -4910,6 +4910,14 @@ h3:hover a.wiki-anchor {
   display: inline;
   color: #ddd; }
 
+div.wiki#preview fieldset.preview {
+  background: none;
+  border: none;
+  background-color: #f2f2f2;
+  border-left: 3px solid red; }
+  div.wiki#preview fieldset.preview legend {
+    display: none; }
+
 /***************************************************************************************************
  *
  * My page layout
