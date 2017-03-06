@@ -57,7 +57,7 @@ jQuery(document).ready(function($){
     var preview = $('div#preview');
     if (wiki_form) {
 	wiki_form.before('\
-<div class="tabs">\
+<div id="wiki-tabs" class="tabs">\
   <ul>\
     <li><a id="tab-wiki_form" class="selected" onclick="showTab(\'wiki_form\', this.href); this.blur(); return false;" href="">Edit</a></li>\
     <li><a id="tab-preview" class="" onclick="showTab(\'preview\', this.href); this.blur(); submitPreview(get_path_for_wiki_edit() + \'/preview\', \'wiki_form\', \'preview\'); return false;" href="">Preview</a></li>\
@@ -68,7 +68,14 @@ jQuery(document).ready(function($){
 ');
 	wiki_form.detach().appendTo('div#tab-content-wiki_form');
 	preview.detach().appendTo('div#tab-content-preview');
-	$('a.button[accesskey=r]').detach();
+
+	// remove preview button
+	var preview_button = $('a.button[accesskey=r]');
+	var buttons = preview_button.parent();
+	preview_button.detach();
+	// move save/cancel
+	buttons.detach();
+	$('div#wiki-tabs').before(buttons);
     }
 
     // Fixme: fix for «
