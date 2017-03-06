@@ -50,11 +50,11 @@ div.wiki {
 	// Add title counter before each title
 	// h1:before { counter-increment: h1; content: counter(h1) ". " }
 	// if h1 adjust them
-	h2:before { counter-increment: h2; content: counter(h2) ". " }
-	h3:before { counter-increment: h3; content: counter(h2) "." counter(h3) ". " }
-	h4:before { counter-increment: h4; content: counter(h2) "." counter(h3) "." counter(h4) ". " }
-	h5:before { counter-increment: h5; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". " }
-	h6:before { counter-increment: h6; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". " }
+	h2:before { counter-increment: h2; content: counter(h2) " " }
+	h3:before { counter-increment: h3; content: counter(h2) "." counter(h3) " " }
+	h4:before { counter-increment: h4; content: counter(h2) "." counter(h3) "." counter(h4) " " }
+	h5:before { counter-increment: h5; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) " " }
+	h6:before { counter-increment: h6; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) " " }
 
 	// h1.nocount:before,
 	// h2.nocount:before,
