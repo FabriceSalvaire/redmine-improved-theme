@@ -108,9 +108,8 @@ span.icon-projects:before {
     background-image: url(../../../images/help.png);
 }
 
-.icon-attachment {
-    // paperclip
-    background-image: url(../../../images/attachment.png);
+a.icon-attachment:before {
+    @include fonteawesome-icon($fa-var-paperclip);
 }
 
 a.icon-history:before {
@@ -194,12 +193,8 @@ a.icon-zoom-in:before {
     @include fonteawesome-icon($fa-var-search-plus);
 }
 
-a.icon-zoom-out:before {
-    @include fonteawesome-icon($fa-var-search-minus);
-}
-
-.icon-magnifier {
-    background-image: url(../../../images/magnifier.png);
+a.icon-magnifier:before {
+    @include fonteawesome-icon($fa-var-eye);
 }
 
 .icon-passwd {
@@ -303,10 +298,12 @@ a.icon-zoom-out:before {
  *
  */
 
+// span
 .sort-handle {
     width: 16px;
     height: 16px;
     background: url(../../../images/reorder.png) no-repeat 0 50%;
+    // Fixme: @include fonteawesome-icon($fa-var-arrows-v);
     cursor: move;
     &.ajax-loading {
         background-image: url(../../../images/loading.gif);

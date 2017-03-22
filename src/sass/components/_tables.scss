@@ -123,6 +123,7 @@ tr {
         }
         &.idnt td.name span {
             background: url(../../../images/bullet_arrow_right.png) no-repeat 0 50%;
+	    // carret-right
             padding-left: 16px;
         }
         &.idnt-1 td.name {
@@ -191,12 +192,14 @@ tr {
     }
     span.expander {
         background-image: url(../../../images/bullet_toggle_plus.png);
+	// plus-square
         padding-left: 8px;
         margin-left: 0;
         cursor: pointer;
     }
     &.open span.expander {
         background-image: url(../../../images/bullet_toggle_minus.png);
+	// minus-square
     }
     &.changeset {
         height: 20px;
