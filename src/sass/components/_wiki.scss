@@ -28,13 +28,16 @@ div.wiki {
     }
     h2 {
 	font-size: ceil(($wiki-font-base * 1.8)); // 1.6
+	margin-top: $padding-large-vertical*3
     }
     h3 {
 	font-size: ceil(($wiki-font-base * 1.6)); // 1.2
+	margin-top: $padding-large-vertical
     }
     h4 {
 	font-size: ceil(($wiki-font-base * 1.2));
 	border-bottom: none;
+	margin-top: $padding-large-vertical
     }
 
     @if $wiki-title-has-counter == true {
@@ -100,7 +103,10 @@ div.wiki {
     }
 
     ul, ol {
-        margin-bottom: 1em;
+        margin-bottom: $wiki-font-base; // $padding-large-vertical*2 // 1em
+	li {
+	    margin-top: $wiki-font-base/3; // $padding-large-vertical
+	}
     }
     li > {
         ul, ol {
@@ -229,6 +235,8 @@ h3:hover a.wiki-anchor {
 
 // Wiki preview
 div.wiki#preview {
+    width: 80%; // Fixme:
+
     fieldset.preview {
 	background: none;
 	border: none;
