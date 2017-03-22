@@ -54,8 +54,8 @@ jQuery(document).ready(function($){
 
     // Implement a tab for wiki form/preview
     var wiki_form = $('form#wiki_form');
-    var preview = $('div#preview');
-    if (wiki_form) {
+    if (wiki_form.length > 0) {
+	var preview = $('div#preview');
 	wiki_form.append('\
 <div id="wiki-tabs" class="tabs">\
   <ul>\

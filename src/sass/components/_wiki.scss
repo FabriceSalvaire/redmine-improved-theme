@@ -234,7 +234,7 @@ h3:hover a.wiki-anchor {
 }
 
 // Wiki preview
-div.wiki#preview {
+div#tab-content-preview > div.wiki#preview {
     width: 80%; // Fixme:
 
     fieldset.preview {
