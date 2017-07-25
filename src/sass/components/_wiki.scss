@@ -109,6 +109,9 @@ div.wiki {
 	}
     }
     li > {
+        ul {
+            list-style-type: inherit; // use bullet for nested list
+        }
         ul, ol {
             margin-bottom: 0;
         }
