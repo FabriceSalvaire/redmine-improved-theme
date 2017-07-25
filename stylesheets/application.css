@@ -2806,6 +2806,8 @@ div #header {
       display: block;
       font-size: .6em;
       font-weight: normal; }
+  div #header div.drdn-items {
+    display: none; }
 
 /*******************************************************************************
  *
@@ -3170,14 +3172,6 @@ input#openid_url {
   visibility: hidden; }
 
 .mobile-show {
-  display: none; }
-
-/*******************************************************************************
- *
- * Redmine 4.2 Fixes
- *
- */
-div.drdn-items {
   display: none; }
 
 /***************************************************************************************************
