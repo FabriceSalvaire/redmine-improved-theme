@@ -2633,7 +2633,7 @@ a.icon-lock, a.icon.icon-del {
 .buttons > .icon:not(:first-child) {
   margin-left: 16px; }
 
-html {
+> html {
   overflow-y: scroll; }
 
 body {
@@ -2834,7 +2834,7 @@ div #header {
     float: none;
     list-style-type: none;
     margin: 0px 2px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    padding: 0;
     white-space: nowrap;
     display: inline-block; }
     #main-menu li:hover ul.menu-children, #main-menu li ul.menu-children.visible {
@@ -2846,7 +2846,7 @@ div #header {
       font-weight: bold;
       margin: 0;
       margin-bottom: 6px;
-      padding: 4px 10px 4px 10px; }
+      padding: 5px 10px 5px 10px; }
       #main-menu li a:hover {
         border-radius: 5px;
         color: white;
@@ -2874,7 +2874,7 @@ div #header {
         #main-menu li a#new-object span {
           font-size: 25pt;
           position: relative;
-          top: -4px;
+          top: -5px;
           left: 0px; }
   #main-menu .menu-children {
     display: none;
@@ -2922,32 +2922,132 @@ div #header {
   padding-left: 20px;
   padding-top: 2px;
   padding-bottom: 3px; }
-  #admin-menu a.projects {
-    background-image: url(../../../images/projects.png); }
-  #admin-menu a.users {
-    background-image: url(../../../images/user.png); }
-  #admin-menu a.groups {
-    background-image: url(../../../images/group.png); }
-  #admin-menu a.roles {
-    background-image: url(../../../images/database_key.png); }
-  #admin-menu a.trackers {
-    background-image: url(../../../images/ticket.png); }
-  #admin-menu a.issue_statuses {
-    background-image: url(../../../images/ticket_edit.png); }
-  #admin-menu a.workflows {
-    background-image: url(../../../images/ticket_go.png); }
-  #admin-menu a.custom_fields {
-    background-image: url(../../../images/textfield.png); }
-  #admin-menu a.enumerations {
-    background-image: url(../../../images/text_list_bullets.png); }
-  #admin-menu a.settings {
-    background-image: url(../../../images/changeset.png); }
-  #admin-menu a.plugins {
-    background-image: url(../../../images/plugin.png); }
-  #admin-menu a.info {
-    background-image: url(../../../images/help.png); }
-  #admin-menu a.server_authentication {
-    background-image: url(../../../images/server_key.png); }
+  #admin-menu a.projects:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 0.66667ex;
+    content: ""; }
+  #admin-menu a.users:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 0.66667ex;
+    content: ""; }
+  #admin-menu a.groups:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 0.66667ex;
+    content: ""; }
+  #admin-menu a.roles:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 0.66667ex;
+    content: ""; }
+  #admin-menu a.trackers:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 0.66667ex;
+    content: ""; }
+  #admin-menu a.issue_statuses:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 0.66667ex;
+    content: ""; }
+  #admin-menu a.workflows:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 0.66667ex;
+    content: ""; }
+  #admin-menu a.custom_fields:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 0.66667ex;
+    content: ""; }
+  #admin-menu a.enumerations:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 0.66667ex;
+    content: ""; }
+  #admin-menu a.settings:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 0.66667ex;
+    content: ""; }
+  #admin-menu a.plugins:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 0.66667ex;
+    content: ""; }
+  #admin-menu a.info:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 0.66667ex;
+    content: ""; }
+  #admin-menu a.server_authentication:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 0.66667ex;
+    content: ""; }
+  #admin-menu a.wiki-links:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 0.66667ex;
+    content: ""; }
 
 /*******************************************************************************
  *
@@ -3047,7 +3147,7 @@ div.modal {
   border-radius: 5px;
   background: #fff;
   z-index: 50;
-  padding: 4px; }
+  padding: 5px; }
   div.modal h3.title {
     display: none; }
   div.modal p.buttons {
@@ -3070,6 +3170,14 @@ input#openid_url {
   visibility: hidden; }
 
 .mobile-show {
+  display: none; }
+
+/*******************************************************************************
+ *
+ * Redmine 4.2 Fixes
+ *
+ */
+div.drdn-items {
   display: none; }
 
 /***************************************************************************************************
@@ -4798,12 +4906,15 @@ div.wiki {
   div.wiki h1 {
     font-size: 32px; }
   div.wiki h2 {
-    font-size: 29px; }
+    font-size: 29px;
+    margin-top: 30px; }
   div.wiki h3 {
-    font-size: 26px; }
+    font-size: 26px;
+    margin-top: 10px; }
   div.wiki h4 {
     font-size: 20px;
-    border-bottom: none; }
+    border-bottom: none;
+    margin-top: 10px; }
   div.wiki body {
     counter-reset: h1 h2 h3 h4 h5 h6; }
   div.wiki h1 {
@@ -4853,7 +4964,11 @@ div.wiki {
     div.wiki a.new {
       color: #b73535; }
   div.wiki ul, div.wiki ol {
-    margin-bottom: 1em; }
+    margin-bottom: 16px; }
+    div.wiki ul li, div.wiki ol li {
+      margin-top: 5.33333px; }
+  div.wiki li > ul {
+    list-style-type: inherit; }
   div.wiki li > ul, div.wiki li > ol {
     margin-bottom: 0; }
   div.wiki pre {
@@ -4910,13 +5025,15 @@ h3:hover a.wiki-anchor {
   display: inline;
   color: #ddd; }
 
-div.wiki#preview fieldset.preview {
-  background: none;
-  border: none;
-  background-color: #f2f2f2;
-  border-left: 3px solid red; }
-  div.wiki#preview fieldset.preview legend {
-    display: none; }
+div#tab-content-preview > div.wiki#preview {
+  width: 80%; }
+  div#tab-content-preview > div.wiki#preview fieldset.preview {
+    background: none;
+    border: none;
+    background-color: #f2f2f2;
+    border-left: 3px solid red; }
+    div#tab-content-preview > div.wiki#preview fieldset.preview legend {
+      display: none; }
 
 /***************************************************************************************************
  *
@@ -5204,8 +5321,15 @@ span.icon-projects:before {
 .icon-help {
   background-image: url(../../../images/help.png); }
 
-.icon-attachment {
-  background-image: url(../../../images/attachment.png); }
+a.icon-attachment:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-right: 0.66667ex;
+  content: ""; }
 
 a.icon-history:before {
   display: inline-block;
@@ -5351,7 +5475,7 @@ a.icon-zoom-in:before {
   padding-right: 0.66667ex;
   content: ""; }
 
-a.icon-zoom-out:before {
+a.icon-magnifier:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -5359,10 +5483,7 @@ a.icon-zoom-out:before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding-right: 0.66667ex;
-  content: ""; }
-
-.icon-magnifier {
-  background-image: url(../../../images/magnifier.png); }
+  content: ""; }
 
 .icon-passwd {
   background-image: url(../../../images/textfield_key.png); }
