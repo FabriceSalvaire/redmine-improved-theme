@@ -1,4 +1,4 @@
-html {
+>html {
     overflow-y: scroll;
 }
 
@@ -539,5 +539,15 @@ input#openid_url {
 }
 
 .mobile-show {
+    display: none;
+}
+
+/*******************************************************************************
+ *
+ * Redmine 4.2 Fixes
+ *
+ */
+
+div.drdn-items { // .projects .selection
     display: none;
 }
