@@ -21,9 +21,9 @@
             list-style-type: none;
             white-space: nowrap;
             margin-right: 4px;
-            background: #fff;
             position: relative;
-            margin-bottom: -1px;
+            // background: #fff; // fix jstoolbar
+            // margin-bottom: -1px;
             a {
                 display: block;
                 font-size: 0.9em;

@@ -28,3 +28,16 @@
 .message .contextual {
     margin-top: 0;
 }
+
+.drdn {
+    span.drdn-trigger {
+	display: none;
+    }
+
+    .drdn-content {
+	display: inline;
+	.drdn-items {
+	    display: inline;
+	}
+    }
+}

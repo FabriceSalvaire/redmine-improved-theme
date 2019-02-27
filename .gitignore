@@ -1,12 +1,16 @@
 *~
+du.log
 
-images/
 node_modules
-private/sass/libs/fontawesome/
-setenv.sh
+yarn.lock
+
+src/sass/libs/fontawesome/
 vendor
 
 # stylesheets
 TODO.txt
 notes/
+screenshots/*.png
+setenv.sh
+src/sass/components/used-css-styles.txt
 trash/
