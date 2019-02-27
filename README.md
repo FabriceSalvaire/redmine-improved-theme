@@ -14,7 +14,7 @@ This work is licensed under [CC by-nc-na](https://creativecommons.org/licenses/b
 
 # Changelog
 
-* Fixes for Redmine V4 : removed edit/preview tab since it is now implemented by v4, unfortunately upstream is still using a CSS and did a lot of changes ...
+* Fixes for Redmine V4 : removed edit/preview tab since it is now implemented by V4, unfortunately upstream is still using a CSS and did a lot of changes ...
 * Disabled header project list added on V3.4
 
 # Features
