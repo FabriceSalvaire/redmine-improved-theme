@@ -19,6 +19,14 @@ textarea.wiki-edit {
 
 $wiki-font-base: 16px;
 
+// html body.theme-Improved.project-hot-list.has-main-menu.controller-issues.action-show.avatars-off
+// div#wrapper div#wrapper2 div#wrapper3 div#main div#content
+// div.issue.tracker-4.status-1.priority-4.priority-high3.created-by-me.details div.description
+// div.wiki
+
+// html body.theme-Improved.project-electrolab.has-main-menu.controller-wiki.action-show.avatars-off
+// div#wrapper div#wrapper2 div#wrapper3 div#main div#content
+// div.wiki.wiki-page
 div.wiki {
     font-size: $wiki-font-base;
     color: $gray-darker;
@@ -38,36 +46,6 @@ div.wiki {
 	font-size: ceil(($wiki-font-base * 1.2));
 	border-bottom: none;
 	margin-top: $padding-large-vertical
-    }
-
-    @if $wiki-title-has-counter == true {
-	// Reset title counters
-	// https://developer.mozilla.org/en-US/docs/Web/CSS/counter-reset
-	body { counter-reset: h1 h2 h3 h4 h5 h6 }
-	h1 { counter-reset: h2 h3 h4 h5 h6 }
-	h2 { counter-reset: h3 h4 h5 h6 }
-	h3 { counter-reset: h4 h5 h6 }
-	h4 { counter-reset: h5 h6 }
-	h5 { counter-reset: h6 }
-
-	// Add title counter before each title
-	// h1:before { counter-increment: h1; content: counter(h1) ". " }
-	// if h1 adjust them
-	h2:before { counter-increment: h2; content: counter(h2) " " }
-	h3:before { counter-increment: h3; content: counter(h2) "." counter(h3) " " }
-	h4:before { counter-increment: h4; content: counter(h2) "." counter(h3) "." counter(h4) " " }
-	h5:before { counter-increment: h5; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) " " }
-	h6:before { counter-increment: h6; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) " " }
-
-	// h1.nocount:before,
-	// h2.nocount:before,
-	// h3.nocount:before,
-	// h4.nocount:before,
-	// h5.nocount:before,
-	// h6.nocount:before {
-	// 	counter-increment: none;
-	// 	content: "";
-	// }
     }
 
     table {
@@ -209,6 +187,38 @@ div.wiki {
     img {
 	vertical-align: middle;
 	max-width: 100%;
+    }
+}
+
+div.wiki-page {
+    @if $wiki-title-has-counter == true {
+	// Reset title counters
+	// https://developer.mozilla.org/en-US/docs/Web/CSS/counter-reset
+	body { counter-reset: h1 h2 h3 h4 h5 h6 }
+	h1 { counter-reset: h2 h3 h4 h5 h6 }
+	h2 { counter-reset: h3 h4 h5 h6 }
+	h3 { counter-reset: h4 h5 h6 }
+	h4 { counter-reset: h5 h6 }
+	h5 { counter-reset: h6 }
+
+	// Add title counter before each title
+	// h1:before { counter-increment: h1; content: counter(h1) ". " }
+	// if h1 adjust them
+	h2:before { counter-increment: h2; content: counter(h2) " " }
+	h3:before { counter-increment: h3; content: counter(h2) "." counter(h3) " " }
+	h4:before { counter-increment: h4; content: counter(h2) "." counter(h3) "." counter(h4) " " }
+	h5:before { counter-increment: h5; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) " " }
+	h6:before { counter-increment: h6; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) " " }
+
+	// h1.nocount:before,
+	// h2.nocount:before,
+	// h3.nocount:before,
+	// h4.nocount:before,
+	// h5.nocount:before,
+	// h6.nocount:before {
+	// 	counter-increment: none;
+	// 	content: "";
+	// }
     }
 }
 
