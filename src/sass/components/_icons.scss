@@ -295,6 +295,19 @@ a.icon-magnifier:before {
     }
 }
 
+a.icon-clear-query:before {
+    @include fonteawesome-icon($fa-var-refresh);
+    // @include fonteawesome-icon($fa-var-trash);
+}
+
+// legend.
+.icon-expended {
+    background-image: url(../../../images/arrow_down.png);
+}
+.icon-collapsed {
+    background-image: url(../../../images/arrow_right.png);
+}
+
 /*******************************************************************************
  *
  *

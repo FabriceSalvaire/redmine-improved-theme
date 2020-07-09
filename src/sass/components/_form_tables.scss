@@ -4,6 +4,15 @@
  *
 */
 
+// <fieldset id="options" class="collapsible collapsed">
+//   <legend onclick="toggleFieldset(this);" class="icon icon-collapsed">Options</legend>
+//     <div class="hidden" style="display: none;">
+div.hidden {
+    display: none;
+}
+
+/***************************************************************************************************/
+
 #watchers {
     select {
         width: 95%;
@@ -221,12 +230,8 @@ fieldset {
     &.collapsible {
         border-width: 1px 0 0 0;
         > legend {
-            padding-left: 16px;
-            background: url(../../../images/arrow_expanded.png) no-repeat 0% 40%;
+            padding-left: 1em;
             cursor: pointer;
-        }
-        &.collapsed > legend {
-            background-image: url(../../../images/arrow_collapsed.png);
         }
     }
     &#date-range p {

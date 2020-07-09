@@ -54,9 +54,14 @@ a {
 
     &.icon.icon-edit,
     &.icon-move,
-    &.icon-reload {
+    &.icon-reload,
+    &.icon-clear-query {
 	@include button();
 	@include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+    }
+
+    &.icon-clear-query {
+	margin-left: .5em;
     }
 
     &.icon-lock,
