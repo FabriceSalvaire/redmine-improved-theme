@@ -5,6 +5,9 @@ node_modules
 private/sass/libs/fontawesome/
 setenv.sh
 vendor
+package-lock.json
+yarn-error.log
+yarn.lock
 
 # stylesheets
 TODO.txt
