@@ -264,7 +264,7 @@ div #header {
 		span {
 		    font-size: 25pt;
 		    position: relative;
-		    top: -$padding-small-vertical;
+		    // top: -$padding-small-vertical;
 		    left: 0px;
 		}
             }
@@ -363,6 +363,9 @@ div #header {
         &.server_authentication:before {
 	    @include fonteawesome-icon($fa-var-key);
         }
+	// &.wiki-links {
+	//     background-image: unset;
+	// }
         &.wiki-links:before {
 	    // Fixme:
 	    @include fonteawesome-icon($fa-var-link);

@@ -246,7 +246,11 @@ h3:hover a.wiki-anchor {
     color: #ddd;
 }
 
+/**************************************************************************************************/
+
 // Wiki preview
+
+/*
 div#tab-content-preview > div.wiki#preview {
     width: 80%; // Fixme:
 
@@ -258,5 +262,12 @@ div#tab-content-preview > div.wiki#preview {
 	legend {
 	    display: none;
 	}
+    }
+}
+*/
+
+.jstBlock {
+    .wiki-edit, .wiki-preview {
+	padding: 1em;
     }
 }

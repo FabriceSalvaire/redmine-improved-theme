@@ -1,6 +1,6 @@
 This repository contains a SASS based [Redmine](http://www.redmine.org) theme forked from the vanilla theme (public/stylesheets/application.css).
 
-It supports Redmine v3.4.
+It supports Redmine V4.
 
 This work is licensed under [CC by-nc-na](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
 
@@ -14,6 +14,7 @@ This work is licensed under [CC by-nc-na](https://creativecommons.org/licenses/b
 
 # Changelog
 
+* Fixes for Redmine V4 : removed edit/preview tab since it is now implemented by V4, unfortunately upstream is still using a CSS and did a lot of changes ...
 * Disabled header project list added on V3.4
 
 # Features
