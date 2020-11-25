@@ -53,30 +53,30 @@ jQuery(document).ready(function($){
     }).append('<i class="fa fa-chevron-right" aria-hidden="true"></i>');
 
     // Implement a tab for wiki form/preview
-    var wiki_form = $('form#wiki_form');
-    if (wiki_form.length > 0) {
-	var preview = $('div#preview');
-	wiki_form.append('\
-<div id="wiki-tabs" class="tabs">\
-  <ul>\
-    <li><a id="tab-wiki_form" class="selected" onclick="showTab(\'wiki_form\', this.href); this.blur(); return false;" href="">Edit</a></li>\
-    <li><a id="tab-preview" class="" onclick="showTab(\'preview\', this.href); this.blur(); submitPreview(get_path_for_wiki_edit() + \'/preview\', \'wiki_form\', \'preview\'); return false;" href="">Preview</a></li>\
-  </ul>\
-</div>\
-<div id="tab-content-wiki_form" class="tab-content"></div>\
-<div id="tab-content-preview" class="tab-content"></div>\
-');
-	wiki_form.find('div.box').detach().appendTo('div#tab-content-wiki_form');
-	preview.detach().appendTo('div#tab-content-preview');
+//     var wiki_form = $('form#wiki_form');
+//     if (wiki_form.length > 0) {
+// 	var preview = $('div#preview');
+// 	wiki_form.append('\
+// <div id="wiki-tabs" class="tabs">\
+//   <ul>\
+//     <li><a id="tab-wiki_form" class="selected" onclick="showTab(\'wiki_form\', this.href); this.blur(); return false;" href="">Edit</a></li>\
+//     <li><a id="tab-preview" class="" onclick="showTab(\'preview\', this.href); this.blur(); submitPreview(get_path_for_wiki_edit() + \'/preview\', \'wiki_form\', \'preview\'); return false;" href="">Preview</a></li>\
+//   </ul>\
+// </div>\
+// <div id="tab-content-wiki_form" class="tab-content"></div>\
+// <div id="tab-content-preview" class="tab-content"></div>\
+// ');
+// 	wiki_form.find('div.box').detach().appendTo('div#tab-content-wiki_form');
+// 	preview.detach().appendTo('div#tab-content-preview');
 
-	// remove preview button
-	var preview_button = $('a.button[accesskey=r]');
-	var buttons = preview_button.parent();
-	preview_button.detach();
-	// move save/cancel : done by wiki_form.append
-	// buttons.detach();
-	// $('div#wiki-tabs').before(buttons);
-    }
+// 	// remove preview button
+// 	var preview_button = $('a.button[accesskey=r]');
+// 	var buttons = preview_button.parent();
+// 	preview_button.detach();
+// 	// move save/cancel : done by wiki_form.append
+// 	// buttons.detach();
+// 	// $('div#wiki-tabs').before(buttons);
+//     }
 
     // Fixme: fix for «
     // var links = $('div.issue div.next-prev-links');
