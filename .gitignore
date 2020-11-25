@@ -2,11 +2,9 @@
 du.log
 
 node_modules
-yarn.lock
-
+package-lock.json
 src/sass/libs/fontawesome/
 vendor
-package-lock.json
 yarn-error.log
 yarn.lock
 
