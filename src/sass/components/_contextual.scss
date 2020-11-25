@@ -16,6 +16,14 @@
         font-size: 0.9em;
     }
 
+    span.drdn {
+	display: inline-block;
+
+	span.drdn-trigger {
+	    display: none;
+	}
+    }
+
     /*
     a {
 	padding: 0; // Check
